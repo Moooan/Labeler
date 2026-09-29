@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S212"
+  ],
+  "reason": "发言的实际求助目标是判断表白后对方的态度信号以及如何推进恋爱关系，属于亲密关系场景，与升学、就业等标签无关。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-29T10:52:09.414339+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

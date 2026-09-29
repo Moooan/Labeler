@@ -1,0 +1,10 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言仅为庆祝论文发表的分享陈述，'帮帮别人助助自己'是互助口号式表达，没有明确可识别的求助目标或问题",
+  "ok": true,
+  "input_sig": "5eb09c01ee5e8e2d91037f85b22330fe72726626bdf661bc42abc74ef06afc1f",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:54:16.119759+00:00"
+}

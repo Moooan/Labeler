@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言是求珠宝品牌营销答题活动的答案，不属于任何升学、学业、就业等场景，为域外求助",
+  "title": "求周大福黄金配饰百科全书答题活动答案",
+  "ok": true,
+  "input_sig": "5a3dc3d0aa2dea7768633f8b857af1c090c8078e8c29f3c66ef86aca8e666097",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:20:46.602464+00:00"
+}

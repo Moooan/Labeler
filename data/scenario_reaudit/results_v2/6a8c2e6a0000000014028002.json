@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "实际求助目标是寻回已注销账号的网易云网友，属寻人诉求，不在标签体系覆盖的升学、学业、就业、成长等场景内，为域外内容。",
+  "title": "错失微信的网易云网友已注销账号，想寻回这位朋友",
+  "ok": true,
+  "input_sig": "cabadc41bee2876da8a09ec3d3d7a82adebe20710c12d962be866bb6a2a7afa0",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:42:45.160639+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068"
+  ],
+  "reason": "用户是研一学生，询问挂科的影响，直接对应在校学业异常中的挂科及其后果；未提及补考、重修等具体环节，不额外扩展。",
+  "title": "果壳研一挂科会有什么后果",
+  "ok": true,
+  "input_sig": "c957f730792cfe9cb89e512592ea6fefddb609586ae2312d5616e63a434ffeb8",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:01:40.422887+00:00"
+}

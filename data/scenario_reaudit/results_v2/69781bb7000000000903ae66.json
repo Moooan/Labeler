@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S161",
+    "S160"
+  ],
+  "reason": "发言末句明确求助如何发现和验证市面尚未被满足的APP需求，对应创业需求验证（S161）；前文脑洞想做一款没人做的APP，涉及项目想法选择（S160）。未涉及升学、求职等其他领域。",
+  "title": "如何发现并验证市面上未被满足的APP需求",
+  "ok": true,
+  "input_sig": "090e30be2aafd39e7041b5b0b696d561021832e849b2e9ab6a1f1fc73fbc2cdd",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:58:52.727250+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S037"
+  ],
+  "reason": "发言的实际求助目标是改进保研申请信（文书材料），对应S037；贫困仅为背景信息，不足以归入奖助学金等场景",
+  "title": "贫困大学生如何改进简陋的保研申请信",
+  "ok": true,
+  "input_sig": "4000f5cb6a3693a4633352bd4ce0b734e18243d71ebb6303068e41c9aedde6c5",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:20:29.666387+00:00"
+}

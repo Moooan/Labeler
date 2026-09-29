@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "用户求助目标是电脑故障排查与解决，属于技术支持类问题，不在给定的升学、就业、校园、个人成长等场景体系内，无匹配标签，判为域外drop。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-29T10:53:14.576567+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

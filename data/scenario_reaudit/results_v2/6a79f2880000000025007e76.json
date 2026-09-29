@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S197"
+  ],
+  "reason": "发言明确求助克服拖延症（S194）及提高自控力、做到自律（S197），无具体学业、职场等背景，其余标签缺乏文本依据。",
+  "title": "如何克服拖延、提升自控力做到自律",
+  "ok": true,
+  "input_sig": "af14d37bab217fea15f3cf380e1961d1d7745eb41257c356398e7adc97c950ae",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:12:45.110640+00:00"
+}

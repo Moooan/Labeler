@@ -1,0 +1,10 @@
+{
+  "status": "insufficient",
+  "scenarios": [],
+  "reason": "发言仅陈述'江浙沪厂二代'身份并抱怨发求助笔记无人回应，未说明具体求助目标（如接班、经营、方向选择等），无法在标签体系中定位场景；不宜替其补充背景推断需求。",
+  "ok": true,
+  "input_sig": "dff73781e4bd691d8258e93ef0c5193c7e680613fcdb1a09c5aa2c5d76e0ef39",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:54:18.916737+00:00"
+}

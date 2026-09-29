@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言核心是咨询付费硕论代写服务（1.2W-1.6W价位）能否顺利交付、是否会被加价，属学术不端相关交易咨询，不在给定场景体系内，无贴切标签可归类。",
+  "title": "咨询购买硕论代写能否顺利完成及后续加价风险",
+  "ok": true,
+  "input_sig": "5d0ebab71c45e2e60b720f1fcee6ef18d8ffc949aa118a11eaaa47506073d612",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:02:38.092743+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "insufficient",
+  "scenarios": [],
+  "reason": "发言仅表达被骗后希望追回钱款的求助，但受骗类型不明；context已移除，无法判断是否属于兼职诈骗等可归类场景（如S174），不能凭想象归类",
+  "title": "被骗后钱款能否追回及应对办法",
+  "ok": true,
+  "input_sig": "2de30fb53746daef2072f073b2b95dc0d1cceed1e5b1e3086bcbbd343c2d7701",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:59:17.026303+00:00"
+}

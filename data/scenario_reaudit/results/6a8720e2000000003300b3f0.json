@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S195"
+  ],
+  "reason": "发言明确求助\"重度拖延\"对应S194；\"想法很多却迟迟无法行动、让自己开始行动\"对应知道要做但无法开始的启动困难S195。无其他领域线索。",
+  "ok": true,
+  "input_sig": "37217a4bda5b2efd7af5dd7c2cf9cf595909e75d7712a2c1b4e01f08065ea800",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:57:52.209363+00:00"
+}

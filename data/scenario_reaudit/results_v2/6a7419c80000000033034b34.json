@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S098"
+  ],
+  "reason": "发言为法学研究生新生询问入学前应做哪些准备，属于研究生阶段入学前的整体规划咨询；未涉及具体课程、材料或就业等细分维度，故仅匹配S098。",
+  "title": "法学研究生新生入学前的准备规划",
+  "ok": true,
+  "input_sig": "fb8af264cc4ea59f36c2caeade473bda17fa1afaf70e91e130b01395fa6942e3",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:27:57.918846+00:00"
+}

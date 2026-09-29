@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "title": "绩点3.8+有保研资格，但翻硕前景不",
+  "title_fallback": true,
+  "classification_fallback": "human_consensus",
+  "status": "keep",
+  "scenarios": [
+    "S036",
+    "S032",
+    "S205",
+    "S031",
+    "S204"
+  ],
+  "reason": "AI连续生成失败；两位人工原结论完全一致，临时采用人工一致结论。",
+  "generation_error": "LLMError：生成或校验失败，可重试",
+  "attempts": 2,
+  "input_sig": "d40b4e092187d5941f6e211348b6f69fb9e83a9d21591f153a380c9824390e9c",
+  "model": "glm-5.3-flash",
+  "updated_at": "2026-09-29T10:57:56.956339+00:00"
+}

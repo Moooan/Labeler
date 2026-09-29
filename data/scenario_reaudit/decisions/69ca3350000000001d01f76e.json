@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S212"
+  ],
+  "reason": "实际求助是恋爱关系中对方回消息少带来的困扰与相处应对，属于亲密关系场景；科研忙碌仅是对方背景描述，非学业或科研求助。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-29T11:05:33.567687+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

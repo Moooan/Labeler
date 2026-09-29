@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言为庆祝论文发表的纯陈述，未提出具体可识别的求助目标；'帮帮别人助助自己'含义模糊，无充分文本依据归入任何场景",
+  "title": "贫困大学生庆祝第一篇论文发表",
+  "ok": true,
+  "input_sig": "5eb09c01ee5e8e2d91037f85b22330fe72726626bdf661bc42abc74ef06afc1f",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:01:30.890303+00:00"
+}

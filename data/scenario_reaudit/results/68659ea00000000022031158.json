@@ -1,0 +1,12 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068"
+  ],
+  "reason": "发言明确询问山东大学挂科的后果及是否通知家长，属于挂科及其影响的核心咨询，仅有充分依据匹配S068；未涉及补考、重修等具体环节。",
+  "ok": true,
+  "input_sig": "a0575d0fc5b8babb70ea5ccd32cd672e363625b0285b24c3d2311274eaf2485a",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:54:34.559130+00:00"
+}

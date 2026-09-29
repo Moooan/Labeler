@@ -1,0 +1,21 @@
+{
+  "context": "",
+  "changes": [
+    "标题求助对象“有人”改为对AI的“你”，并与正文合并",
+    "删除正文末尾的话题标签（#教教我 #经验 #不明白就问 #提问 #谁来教教我 #不懂我就问 #求助），均为平台标签，无额外信息",
+    "“怎么做到的”是对他人经历的征询，保留原意，由AI来分析介绍经验"
+  ],
+  "needs_review": true,
+  "note_id": "6a60b942000000000402b88f",
+  "source_sig": "17152a89aca91a4aff5bad5ffc47d28f59990341b573334ba84697cea471ebd6",
+  "version": "ai-context-v1",
+  "approved": true,
+  "revision": 5,
+  "updated_at": "2026-09-29T07:52:13.040494+00:00",
+  "context_backup": "你能教教我吗？一条笔记就火的人，是怎么做到的？",
+  "context_not_needed": true,
+  "not_needed": false,
+  "query": "一条笔记就火的人，是怎么做到的？",
+  "query_not_needed": false,
+  "query_approved": true
+}

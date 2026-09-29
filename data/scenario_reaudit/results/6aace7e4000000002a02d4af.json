@@ -1,0 +1,10 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言是食物中毒后询问食品检测、封存和监管部门归属的消费者维权问题，标签体系内无消费维权或食品安全类场景，属域外求助。",
+  "ok": true,
+  "input_sig": "b3e2700e0bd5b2b05ff90340d7945ef034fca06182f3159b1bebdca05893b7a1",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:53:19.625674+00:00"
+}

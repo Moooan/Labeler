@@ -1,0 +1,11 @@
+{
+  "status": "insufficient",
+  "scenarios": [],
+  "reason": "发言仅泛泛提及过去未积累、当下焦虑并求补救，未说明当前所处阶段（在校/职场）、想补的积累领域（学历、技能或经验）及具体目标，无法匹配到具体场景，标记信息不足",
+  "title": "焦虑年轻时安逸没积累，现在如何补救",
+  "ok": true,
+  "input_sig": "3561c7b76d7adb7069ccd6f3d2f2cdf0a6655d0958da8bd2e4a85e1dcd243ef8",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:40:57.110127+00:00"
+}

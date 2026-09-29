@@ -1,0 +1,11 @@
+{
+  "status": "insufficient",
+  "scenarios": [],
+  "reason": "发言仅表明硕士论文完全没有思路并求助，未说明处于选题、开题、研究设计还是写作等具体环节，信息不足以确定唯一场景",
+  "title": "硕士论文无思路求助，具体环节不明",
+  "ok": true,
+  "input_sig": "e5a5e7e25a573bcd2fabe490a565f6509d23e731607e891c0a01b51e7450fca5",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:01:29.811686+00:00"
+}

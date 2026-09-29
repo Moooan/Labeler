@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "用户仅询问张雪峰十条铁律的具体内容，属资讯类提问；文中“专业选择”“升学规划”等均为话题词语，未体现用户自身的高考志愿、就业或升学决策情境，无可归入场景的实际求助目标。",
+  "title": "询问张雪峰大学专业选择与升学就业规划十条铁律内容",
+  "ok": true,
+  "input_sig": "231cf4f7934ff3eaeef36bfecb4fe83feda5bacdba50c3093b2be0ec711b6190",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:22:29.113310+00:00"
+}

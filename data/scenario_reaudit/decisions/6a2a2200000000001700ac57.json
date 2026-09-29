@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S084"
+  ],
+  "reason": "用户为研究生，实际求助目标是发表SCI论文的投稿渠道（期刊选择与投稿路径），符合S084论文投稿场景；不想走中介仅为约束条件，无其他充分依据的场景。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-29T10:51:10.223129+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

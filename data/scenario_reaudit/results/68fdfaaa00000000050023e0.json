@@ -1,0 +1,12 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194"
+  ],
+  "reason": "发言核心诉求是克服长期重度拖延（因无后果而愈发拖延），与'执行力>拖延'定义直接匹配；未提及其他域内具体任务场景或就医线索。",
+  "ok": true,
+  "input_sig": "59a46b88febd16a40e4c5b336b0b3505c5924e1efc9a54d83d23e52719b58fa7",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:57:51.936375+00:00"
+}

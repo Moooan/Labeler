@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "实际求助是生活记录/卡密的存储整理与房间收纳省空间技巧，属于生活整理类问题，标签体系中无对应场景，属域外内容",
+  "title": "生活记录、卡密保存杂乱与房间收纳空间的统一整理技巧",
+  "ok": true,
+  "input_sig": "2f868ea1da28091dff235989c8dbd6dd917db713ee9a45b656d2a5b0eed8d6ec",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:21:44.711073+00:00"
+}

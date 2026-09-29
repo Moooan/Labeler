@@ -1,0 +1,11 @@
+{
+  "status": "insufficient",
+  "scenarios": [],
+  "reason": "发言只表达着急、无助的笼统情绪并笼统发问，未出现任何具体事件、领域或对象（学业、求职、关系等均无从判断）；context已移除，无法确认情绪针对的实际问题，信息不足",
+  "title": "时常感到着急无助，寻求应对建议",
+  "ok": true,
+  "input_sig": "c3d437acb9fa9c1ea285535ce2b2fd835a982b712a9160433380091eccf70184",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:22:09.910875+00:00"
+}

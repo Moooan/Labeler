@@ -1,0 +1,22 @@
+{
+  "context": "",
+  "changes": [
+    "标题与正文合并为完整输入，未重复正文内容",
+    "🐟期按谐音理解为“逾期”（结合每天都是电话的语境），如判断有误请复核",
+    "删除平台标签#求助、#求助帖、#坦白局；#真的很着急的情绪信息保留并并入正文",
+    "结尾求助对象改为对AI的自然表达“你觉得我该怎么办呢”"
+  ],
+  "needs_review": true,
+  "note_id": "6aad085f000000001203f827",
+  "source_sig": "9f286d20f633bc5f101376f42eb15f1f5dde4a3b57ee8892d4ac2436c457124b",
+  "version": "ai-context-v1",
+  "approved": true,
+  "revision": 4,
+  "updated_at": "2026-09-29T07:51:10.583721+00:00",
+  "query": "逾期三个月扛不住了，焦虑。每天都是电话，感觉这几个月没有别的事情能进入我的生活，已经被它严重影响了，真的很着急，你觉得我该怎么办呢？",
+  "query_not_needed": false,
+  "query_approved": true,
+  "context_backup": "逾期三个月扛不住了，焦虑。每天都是电话，感觉这几个月没有别的事情能进入我的生活，已经被它严重影响了，真的很着急，你觉得我该怎么办呢？",
+  "context_not_needed": true,
+  "not_needed": false
+}

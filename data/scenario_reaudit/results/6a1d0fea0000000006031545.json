@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S034",
+    "S037"
+  ],
+  "reason": "用户咨询北大夏令营申请中推荐信骑缝签字与上传要求，属于保研夏令营申请及推荐信等文书材料规范问题，对应S034夏令营和S037文书材料。",
+  "ok": true,
+  "input_sig": "525d7a0356e4bae7fde844ec1523942efed8aa553b8a7ece752356b743fd160f",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:53:07.746951+00:00"
+}

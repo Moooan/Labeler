@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言求助目标是寻人的办法和渠道，不属于升学、就业、职场、个人成长等标签体系覆盖的领域，也无足够信息对应任何给定场景，判定为域外。",
+  "title": "询问可用的寻人途径与渠道",
+  "ok": true,
+  "input_sig": "8861d61fe7e7bc0f4220c9c58400b911796cf0cf2aeb3ad29db284b83ef53d5f",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:17:36.447127+00:00"
+}

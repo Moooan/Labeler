@@ -1,0 +1,10 @@
+{
+  "status": "insufficient",
+  "scenarios": [],
+  "reason": "用户请求把某个未指明的内容（'这个'）做成Excel表格，缺少所指对象信息，无法判断属于哪个规划场景；纯粹的表格制作操作本身也不在标签体系覆盖范围内。",
+  "ok": true,
+  "input_sig": "c2ea394601b9da9664113c317ca7c9bea88b444a5e67bda1341edf7498fae8f8",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:51:55.800405+00:00"
+}

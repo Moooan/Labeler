@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S204"
+  ],
+  "reason": "用户明确表达近期持续焦虑并询问缓解方法，属于情绪类焦虑场景；未提及学业、职场等具体压力源，不足以归入其他标签。",
+  "title": "缓解近期持续的焦虑情绪",
+  "ok": true,
+  "input_sig": "34b27ea7476009b9988b26dddacff1c765970a88abeddd77b25ac8bafab41640",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:11:27.351406+00:00"
+}

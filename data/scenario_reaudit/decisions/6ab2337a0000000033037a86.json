@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言询问浙江移动手机号销号的办理方式，属于电信业务办理咨询，与给定的升学、就业、校园等三级标签体系均不匹配，为域外内容，无可归属场景。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-29T11:01:32.722147+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "实际求助目标是编写codex skill搭建自动化视频生产工具，属于编程/工具开发需求，标签体系中无对应场景；虽涉及素材脚本配音等自媒体流程，但求助形式为技术搭建而非内容生产咨询，故为域外drop。",
+  "title": "编写Codex skill实现信息流视频素材批量自动制作",
+  "ok": true,
+  "input_sig": "7bfc3844a6ab1442f87905ae49968cc84a09723bf3010a7d4ee06c36e5945c0a",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:58:45.640461+00:00"
+}

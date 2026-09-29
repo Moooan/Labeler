@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言是COMSOL软件功能故障排查类技术求助，属于软件操作/排错问题，标签体系中无对应场景，域外处理。",
+  "title": "COMSOL软件无法构建对象的原因与解决",
+  "ok": true,
+  "input_sig": "502c3d7926c9056a687a95c87bb98c394ce95c04b45db090a1fff3074b8f5d7f",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:20:38.722627+00:00"
+}

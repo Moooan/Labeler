@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S212"
+  ],
+  "reason": "实际求助是恋爱关系中对方回消息少带来的困扰与相处应对，属于亲密关系场景；科研忙碌仅是对方背景描述，非学业或科研求助。",
+  "title": "男友称忙科研少回消息，如何判断与应对",
+  "ok": true,
+  "input_sig": "33195c2134acdedffc45cf6b08eab4958af85cc912e186abf6becaf6380a25d9",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:08:23.390336+00:00"
+}

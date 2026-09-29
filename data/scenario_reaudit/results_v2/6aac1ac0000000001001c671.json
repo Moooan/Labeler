@@ -1,0 +1,12 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "实际求助目标是与导员的冲突处理及是否向上反映、担心被报复，属于师生/导员关系维权问题，标签体系中无对应场景；留学仅是事件背景，非留学申请类求助，故判为域外drop。",
+  "title": "找导员要学姐联系方式被拒且被当众批评，想向上反映又怕被针对",
+  "title_fallback": false,
+  "ok": true,
+  "input_sig": "b854e0e2b21ef2709c4c37b6970d0d1ed616ccdc1023ced5371cb33e3e8f29c0",
+  "model": "glm-5.3-flash",
+  "attempts": 2,
+  "updated_at": "2026-09-29T10:51:04.892590+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S212"
+  ],
+  "reason": "发言核心是恋爱关系中的聊天沟通与相处姿态问题，属于亲密关系场景；标签体系中无更贴切的沟通类或情绪类标签可依据。",
+  "title": "与男友聊天如何高情商回复、摆脱卑微讨好",
+  "ok": true,
+  "input_sig": "b22ebbc7dc9c102f3f0572d81f73f96ea4f2383f826c5bc0657cd0076dcfe2e7",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:19:54.581057+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言是寻找服装同款/相似款的购物求助，属于消费购物类需求，与给定的升学、就业、个人成长等三级标签体系无匹配场景，域外处理。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-29T10:53:21.302176+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

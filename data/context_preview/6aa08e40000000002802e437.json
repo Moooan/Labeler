@@ -1,0 +1,21 @@
+{
+  "context": "",
+  "changes": [
+    "去掉“求助贴”平台标签",
+    "标题与正文话题标签合并为一条完整输入，标题不重复",
+    "正文仅有话题标签，去掉#符号，把有意义的话题词（大环境、面试、机会、回暖、未来发展、博士）融入表述以保留其信息"
+  ],
+  "needs_review": false,
+  "note_id": "6aa08e40000000002802e437",
+  "source_sig": "6e09794d67e5b92f7e59d667b5410bf3ede7cf70c28a2aa1f7ca806dc28f13c6",
+  "version": "ai-context-v1",
+  "approved": false,
+  "revision": 6,
+  "updated_at": "2026-09-29T07:39:23.818349+00:00",
+  "not_needed": false,
+  "context_backup": "生物医药市场是不是好起来了？想了解一下现在的大环境、面试机会和未来发展的情况，还有博士相关的机会。",
+  "context_not_needed": true,
+  "query": "生物医药市场是不是好起来了？想了解一下现在的大环境、面试机会和未来发展的情况，还有博士相关的机会。",
+  "query_not_needed": false,
+  "query_approved": true
+}

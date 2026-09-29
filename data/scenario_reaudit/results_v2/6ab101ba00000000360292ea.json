@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "用户求助的是住宅前行道树遮挡采光的法律规定及与街道沟通的处理途径，属居民绿化/法律咨询类问题，不在给定标签体系覆盖范围内，为域外drop。",
+  "title": "行道树高20米遮挡采光，问树高与楼距的法律规定",
+  "ok": true,
+  "input_sig": "4bb79e92b632a83da6ac19106a6490fdefba5534b98d568c6426681cdd03ccc6",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:19:50.515780+00:00"
+}

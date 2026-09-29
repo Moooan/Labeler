@@ -1,0 +1,12 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S081"
+  ],
+  "reason": "硕士论文中对已跑出的模型进行正确性验证，属于论文毕设中的数据分析与建模结果解释问题，与标签体系无域外偏离。",
+  "ok": true,
+  "input_sig": "7f1881e29568dae9f0d0ee0f293e462c9b9d70ebc50ef288eb8ee8577c36eed1",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:51:20.106594+00:00"
+}

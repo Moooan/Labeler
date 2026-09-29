@@ -1,0 +1,12 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068"
+  ],
+  "reason": "用户明确询问研究生挂科的后果及应对办法，核心求助目标为课程未通过的影响与处理，对应挂科场景；情绪表述仅为附带抱怨，无独立求助目标。",
+  "ok": true,
+  "input_sig": "be3d963b8ea49b86ddaf43b971d222dc9af88a06c536c722238cc9606d5b3516",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:54:52.185598+00:00"
+}

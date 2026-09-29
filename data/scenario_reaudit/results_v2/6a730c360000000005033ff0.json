@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "实际求助目标是codex工具的使用方法与指令写法，属于技术工具操作问题，不在给定人生规划场景体系内；发言未提供任何升学、就业、执行力等具体困扰，无法映射到现有标签。",
+  "title": "用codex搭建人生管理系统的具体指令写法",
+  "ok": true,
+  "input_sig": "205b36e11e2dfd63413d4cb637b40c31b4e0549c8f8258d70c8ea83c686b7cee",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:38:00.859431+00:00"
+}

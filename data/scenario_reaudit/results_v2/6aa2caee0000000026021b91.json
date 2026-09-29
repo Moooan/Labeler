@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "求助目标是寻找PPT代做服务的推荐与筛选，属于校外付费代做需求，不属于给定标签体系内任何场景，也非作业本身的理解与完成，故判为域外drop。",
+  "title": "PPT自己做不完想找做完再付款的靠谱代做",
+  "ok": true,
+  "input_sig": "5d6e1ebf8c1bbb8796ad2f935e20e98f6373afda42205de86e09e5839da9533b",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:00:00.108153+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S037"
+  ],
+  "reason": "发言的实际求助目标是改进保研申请信（文书材料），对应S037；贫困仅为背景信息，不足以归入奖助学金等场景",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-29T11:02:41.360527+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

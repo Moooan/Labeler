@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S195"
+  ],
+  "reason": "发言明确求助改善拖延和启动困难，对应执行力标签；沉溺幻想与执行功能障碍无更精确标签，用户归因于压力而非怀疑ADHD或询问就医，故不选S218等其他场景。",
+  "title": "慢性压力致执行功能障碍：拖延与启动困难如何改善",
+  "ok": true,
+  "input_sig": "a3024c4cc9c6d75c347bbdc6b580e5dac4ec8f6a5aba3712821ba223bc37b0c0",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:14:35.339511+00:00"
+}

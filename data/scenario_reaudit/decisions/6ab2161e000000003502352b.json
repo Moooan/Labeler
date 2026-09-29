@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言仅表达被骗后希望追回钱款的求助，但受骗类型不明；context已移除，无法判断是否属于兼职诈骗等可归类场景（如S174），不能凭想象归类",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-29T11:04:24.959975+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

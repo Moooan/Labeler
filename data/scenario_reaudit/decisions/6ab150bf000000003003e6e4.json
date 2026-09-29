@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S060",
+    "S058",
+    "S061"
+  ],
+  "reason": "自动确认：context保留，且两位人工结论与AI独立复审完全一致。",
+  "operator": "系统自动确认",
+  "revision": 1,
+  "updated_at": "2026-09-29T11:06:08.293804+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx",
+  "automatic": true
+}

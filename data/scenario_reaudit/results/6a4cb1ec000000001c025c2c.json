@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068",
+    "S059",
+    "S208"
+  ],
+  "reason": "核心求助为留学首次挂科后的处理（挂科影响、是否可补救），并明确询问澳洲撤课申请成功率、meeting和材料DIY等退补选流程；同时表达挂科后的慌张无助情绪。",
+  "ok": true,
+  "input_sig": "6fc571e21ccd348b554b7a988e8db007408ae6f54b0a42121bbce6a76fc0edcb",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:55:21.998138+00:00"
+}

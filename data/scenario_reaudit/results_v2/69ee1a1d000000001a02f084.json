@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194"
+  ],
+  "reason": "发言结尾明确求助如何彻底克服拖延，通篇围绕拖延模式、反复抗争与方法失效，对应S194；复读、自厌情绪等为过往经历陈述，非当前求助目标。",
+  "title": "拖延困扰七年，心理学方法和时间管理APP均反复失败，如何彻底克服",
+  "ok": true,
+  "input_sig": "fac3f421f6879fab0650abb6b4fb91f3abf287b0c62b0e0be8ec3d8a2bd6accf",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:07:34.216174+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "title": "秋招网申国家能源期间，被博士导师问我",
+  "title_fallback": true,
+  "classification_fallback": "human_consensus",
+  "status": "drop",
+  "scenarios": [],
+  "reason": "AI连续生成失败；两位人工原结论完全一致，临时采用人工一致结论。",
+  "generation_error": "LLMError：生成或校验失败，可重试",
+  "attempts": 2,
+  "input_sig": "be53f959985575de05e317ea54190cb8e4440d6931503c966b85926372e17f39",
+  "model": "glm-5.3-flash",
+  "updated_at": "2026-09-29T10:58:44.651952+00:00"
+}

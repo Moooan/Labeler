@@ -1,0 +1,12 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S177"
+  ],
+  "reason": "用户询问单条笔记爆火的方法，核心是自媒体内容的曝光与流量增长，对应S177流量增长场景。",
+  "ok": true,
+  "input_sig": "ef659f6ed962947c116437b771cbf61db598cad1df97f8f8651efc490b120a19",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:52:50.820718+00:00"
+}

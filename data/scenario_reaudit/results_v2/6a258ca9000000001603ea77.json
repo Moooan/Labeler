@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S195"
+  ],
+  "reason": "发言核心是只有deadline才能行动、截止前赶工，明确求助如何培养内驱力与行动力，属于执行力-拖延（截止前赶工），并兼有缺乏deadline时无法启动的启动困难表现，无其他领域依据。",
+  "title": "无DDL不行动：如何培养内驱力提升行动力",
+  "ok": true,
+  "input_sig": "654d4f2f6402470e056931fc7febb4a1fe5de249500034299ac8b463bb44c987",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:06:52.700899+00:00"
+}

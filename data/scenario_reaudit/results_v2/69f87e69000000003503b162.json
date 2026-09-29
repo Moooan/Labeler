@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S173"
+  ],
+  "reason": "发言者以打码分享案例作为免费咨询的回报，实际求助是如何应对既要免费分析又拒绝案例分享的用户，属于副业咨询服务的变现模式与运营规则问题，对应S173；未提及自媒体平台等其他依据。",
+  "title": "免费职业规划咨询遇白嫖者如何处理",
+  "title_fallback": false,
+  "ok": true,
+  "input_sig": "5b1391bb6ac1b6c80b676094d844b6ef073173facfb4b32a378beeec33e72a24",
+  "model": "glm-5.3-flash",
+  "attempts": 2,
+  "updated_at": "2026-09-29T10:54:34.365879+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "context": "",
+  "changes": [
+    "标题“急急急！”并入正文开头，保留紧急情绪",
+    "求助对象“谁能帮”改为对AI的表达“请你帮我”",
+    "删除平台话题标签#ppt#ppt制作#ppt接单",
+    "保留付费需求“做完就结”"
+  ],
+  "needs_review": false,
+  "note_id": "6aa2caee0000000026021b91",
+  "source_sig": "3ec980fde4d19ccaf0860a88bf1a63cdcea1d480641d9525ebf51d4f00268877",
+  "version": "ai-context-v1",
+  "approved": true,
+  "revision": 3,
+  "updated_at": "2026-09-29T07:47:40.060753+00:00",
+  "context_backup": "急急急！请你帮我做下ppt，自己做不完了。",
+  "context_not_needed": true,
+  "not_needed": false
+}

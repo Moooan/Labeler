@@ -1,0 +1,10 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "实际求助目标是寻找PPT代做服务（外包交易需求），属于标签体系外的域外内容，现有场景均无充分对应依据",
+  "ok": true,
+  "input_sig": "5d6e1ebf8c1bbb8796ad2f935e20e98f6373afda42205de86e09e5839da9533b",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:52:38.150777+00:00"
+}

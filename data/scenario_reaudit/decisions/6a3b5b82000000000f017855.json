@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S218"
+  ],
+  "reason": "用户明确自述患有ADHD，核心诉求是寻找适合ADHD的拖延改善方法，故选S218（ADHD相关）与S194（拖延）；透支情绪仅为论述背景，无充分依据支持其他标签。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-29T10:47:57.732083+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

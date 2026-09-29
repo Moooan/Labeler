@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言是12306火车票候补购票问题，属于出行票务，不在三级标签体系覆盖的升学、就业、校园等场景内，无可归类标签。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-29T10:33:36.128536+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言为住宅装修方案选择问题（客厅开间、承重柱、女儿房开内窗），属于家居装修域，给定三级标签体系无对应场景，判为域外drop。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-29T10:52:34.164120+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

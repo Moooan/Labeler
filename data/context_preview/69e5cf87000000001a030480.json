@@ -1,0 +1,15 @@
+{
+  "context": "情感问题求助，请你帮忙。",
+  "changes": [
+    "标题与正文合并为完整输入，去掉平台话题标签“#情感问题”（其话题信息与标题重复，已保留在正文中）",
+    "将面向论坛的求助转换为对AI的自然表达（请你帮忙）"
+  ],
+  "needs_review": false,
+  "note_id": "69e5cf87000000001a030480",
+  "source_sig": "ae515bb7c9e25fa314d7d4629a9c9cfcfb701d9990c8ddbf69aa48e6b27c2d44",
+  "version": "ai-context-v1",
+  "approved": false,
+  "revision": 4,
+  "updated_at": "2026-09-29T07:51:57.261780+00:00",
+  "not_needed": true
+}

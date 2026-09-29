@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S129",
+    "S130",
+    "S204"
+  ],
+  "reason": "发言明确多次面试无结果、迟迟拿不到offer、找工作难并感到焦虑，实际求助为求职受挫应对与心态调整，故归入求职被拒、无offer/待业及焦虑情绪场景。",
+  "title": "多次面试无结果未拿offer，求职焦虑求调整心态",
+  "ok": true,
+  "input_sig": "6837ecfd612c569c223bbf5e6e0ae65e84ff8dd782a12096c7766ccae2cd64f0",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:11:35.630278+00:00"
+}

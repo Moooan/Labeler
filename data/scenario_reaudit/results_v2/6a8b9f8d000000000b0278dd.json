@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S095",
+    "S094"
+  ],
+  "reason": "发言明确求助学生会或社团干部竞选报名表中个人简介与未来规划的写法，属于班委/学生会及社团组织经历场景，文本依据充分。",
+  "title": "大一新生竞选学生会社团干部报名表简介怎么写",
+  "ok": true,
+  "input_sig": "b95cd02e75c96ccbd29f9778fcdfc4cac62b80d5c9b7215a3da50dd9d7610da8",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:36:00.702490+00:00"
+}

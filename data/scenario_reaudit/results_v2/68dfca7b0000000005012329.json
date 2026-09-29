@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S039"
+  ],
+  "reason": "发言明确是保研私人面试中被问未来规划时如何准备作答，属于保研面试考核准备，对应S039；未体现其他独立求助目标。",
+  "title": "临床保研私面中未来规划问题的准备与回答",
+  "ok": true,
+  "input_sig": "92a8a2d2a3a613b45ba6598b9d1d8f9872a968d8e3fa6c4bf345f96f2ad74e9f",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:27:56.026453+00:00"
+}

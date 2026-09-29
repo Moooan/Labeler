@@ -1,0 +1,22 @@
+{
+  "context": "",
+  "changes": [
+    "标题与正文合并为完整输入，保留专升本担忧及硕论无思路的全部原文内容",
+    "将面向论坛读者的求助改为对AI的表达：“硕论求助”改为“硕论我没有任何思路，请你帮帮我”，保留原有的“拜托拜托”",
+    "删除表情符号🙏",
+    "删除无意义的平台话题标签“#求助帖”"
+  ],
+  "needs_review": false,
+  "note_id": "6a45fac5000000000e03c000",
+  "source_sig": "f002091d2e079430ff6f5a745f779e01ace2640c0298f461be5b415d294d10e4",
+  "version": "ai-context-v1",
+  "approved": true,
+  "revision": 4,
+  "updated_at": "2026-09-29T07:44:37.659759+00:00",
+  "context_backup": "说实话，我是真的想专升本，我怕我家里不同意，怕花了那么多钱没考上或者考上民办的，硕论我没有任何思路，请你帮帮我，拜托拜托。",
+  "context_not_needed": true,
+  "not_needed": false,
+  "query": "说实话，我是真的想专升本，我怕我家里不同意，怕花了那么多钱没考上或者考上民办的，硕论我没有任何思路，请你帮帮我，拜托拜托。",
+  "query_not_needed": false,
+  "query_approved": true
+}

@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S110"
+  ],
+  "reason": "用户实际求助目标是求职面试中如何回答职业规划类问题，属于单面环节的面试应对，而非真正的职业长期规划或方向探索",
+  "title": "面试被问职业规划但无规划时的回答策略",
+  "ok": true,
+  "input_sig": "d2837d667c723a07dcdabbaad2da7910c6a4620280c66568e887b8dde63f881b",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:31:01.375497+00:00"
+}

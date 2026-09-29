@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S160",
+    "S161"
+  ],
+  "reason": "用户想做一个市面上没有的APP并在脑洞项目想法，属于创业方向/项目想法选择（S160）；末尾明确询问如何发现和验证这类需求，对应需求验证（S161）。",
+  "ok": true,
+  "input_sig": "090e30be2aafd39e7041b5b0b696d561021832e849b2e9ab6a1f1fc73fbc2cdd",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:51:25.862760+00:00"
+}

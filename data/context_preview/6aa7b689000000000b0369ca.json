@@ -1,0 +1,15 @@
+{
+  "context": "我看大家硕论动不动就是1.2W、1.6W的，请你帮我分析下跟我差不多的情况，一般都能顺利完成吗，后面不会让我加钱吧",
+  "changes": [],
+  "needs_review": false,
+  "note_id": "6aa7b689000000000b0369ca",
+  "source_sig": "c1f90c0e9ce129b25abf0fa39df0f43be0ea0589175c0ce2dae3d08255b9996a",
+  "version": "ai-context-v1",
+  "approved": true,
+  "revision": 3,
+  "updated_at": "2026-09-29T08:08:42.920139+00:00",
+  "query_backup": "硕士论文花1.2W到1.6W，能顺利完成吗，后面会不会被要求加钱？",
+  "query": "",
+  "query_not_needed": true,
+  "query_approved": false
+}

@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言是关于如何向网友发帖求助的元问题，未描述任何具体的身体、心理、职场、校园或家庭困扰，无可识别的具体求助目标，超出三级标签体系域外范围。",
+  "title": "询问如何向网友求助身体心理职场等困扰",
+  "ok": true,
+  "input_sig": "30c70bdcf1f6ce4770c058e1233bfcb58b6106163498cdce8a306baedda1ab1d",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:17:23.470113+00:00"
+}

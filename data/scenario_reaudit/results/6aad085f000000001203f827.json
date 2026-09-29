@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S215",
+    "S204"
+  ],
+  "reason": "用户主诉逾期三个月、每天催收电话严重影响生活，核心求助是债务逾期带来的还款压力（S215）；同时明确表达焦虑、扛不住，情绪困扰突出（S204）。",
+  "ok": true,
+  "input_sig": "c6e9202b42fbceb1359024fdeedf1d3e61ced44936121f55e22a284db3f3054f",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:52:55.286389+00:00"
+}

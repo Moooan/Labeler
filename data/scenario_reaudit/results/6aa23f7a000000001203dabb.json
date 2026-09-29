@@ -1,0 +1,12 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S070"
+  ],
+  "reason": "用户已确定无法参加补考只能重修，核心求助是重修会有什么影响，对应学业异常下的重修场景；挂科和补考仅为背景陈述，未提出相关求助。",
+  "ok": true,
+  "input_sig": "1b82fe1bd23a545994400d17c96f9c57ceaa26fa47240cbe1262018a4baf1d81",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:55:06.374377+00:00"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068"
+  ],
+  "reason": "研一研究生询问挂科会有什么后果，直接对应挂科及其影响场景；未提及补考、重修、延毕等具体环节，不足以附加其他标签。",
+  "ok": true,
+  "input_sig": "c957f730792cfe9cb89e512592ea6fefddb609586ae2312d5616e63a434ffeb8",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:54:24.820056+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068",
+    "S069"
+  ],
+  "reason": "发言核心是期末挂科、开学补考53分未过，询问改分是否可行及后续该怎么办，直接对应挂科影响（S068）与补考成绩及后续影响（S069）；改分请求属违规操作，不归入成绩申诉。",
+  "ok": true,
+  "input_sig": "f05e17ad99268c8db33a3eceaa2637fe31dbbcc66f27b3f73e1fe95a36731cc7",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:54:31.742986+00:00"
+}

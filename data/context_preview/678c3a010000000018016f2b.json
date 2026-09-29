@@ -1,0 +1,22 @@
+{
+  "context": "",
+  "changes": [
+    "合并标题与正文，标题不重复",
+    "删除“报酬30元”：属于给网友付报酬的平台交互措辞，非真实预算或付费需求",
+    "“有人帮我把这个做成excel 表格吗”改为对AI的表达“请你帮我把这个做成excel 表格”",
+    "保留原文“我懒得弄”的口语表述和情绪"
+  ],
+  "needs_review": false,
+  "note_id": "678c3a010000000018016f2b",
+  "source_sig": "5527af96e81c6c7139f4f5f59e0438f438dc17df7d060c3cfb00ec1d61ae0538",
+  "version": "ai-context-v1",
+  "approved": true,
+  "revision": 4,
+  "updated_at": "2026-09-29T07:44:24.152369+00:00",
+  "context_backup": "请你帮我把这个做成excel 表格。我懒得弄。",
+  "context_not_needed": true,
+  "not_needed": false,
+  "query": "请你帮我把这个做成excel 表格。我懒得弄。",
+  "query_not_needed": false,
+  "query_approved": true
+}

@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S218",
+    "S198"
+  ],
+  "reason": "发言自述疑似ADHD、注意力调控能力受损，核心诉求为改善注意力并发挥优势，直接对应ADHD相关困扰场景；注意力频繁转移与改善诉求亦对应分心场景，无足够依据支持其他标签。",
+  "title": "疑似ADHD：如何改善注意力并发挥自身优势",
+  "ok": true,
+  "input_sig": "8cee1ec8e2704f638b89b3726197628f4b4e3a288e7b66fb7ee0c23645a7df5f",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:09:11.173768+00:00"
+}

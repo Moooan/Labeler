@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S177"
+  ],
+  "reason": "实际求助目标是提升公众号文章曝光与阅读量，属于自媒体流量增长；作业只是背景，未见作业完成或内容生产方面的求助，故仅选S177。",
+  "title": "大学生暑假作业公众号文章如何提升浏览量",
+  "ok": true,
+  "input_sig": "95db3b26f4c5adc2fe16f87d2a5b1f5f2eb3e6ebd2464ac634818099ab3415f7",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:12:27.978118+00:00"
+}

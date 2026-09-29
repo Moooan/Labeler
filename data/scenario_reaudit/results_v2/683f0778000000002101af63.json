@@ -1,0 +1,8 @@
+{
+  "ok": false,
+  "error": "LLMError：生成或校验失败，可重试",
+  "attempts": 2,
+  "updated_at": "2026-09-29T11:02:55.326025+00:00",
+  "title": "公立国际部高一学生计划出国留学，有必",
+  "title_fallback": true
+}

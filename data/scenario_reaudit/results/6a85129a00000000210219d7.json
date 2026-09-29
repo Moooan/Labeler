@@ -1,0 +1,12 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068"
+  ],
+  "reason": "末句明确求助：工科挂科在学校无保研资格、已确定考研、不拿奖学金的情况下是否还有大影响，核心是挂科的影响评估；室友矛盾仅为背景陈述，非求助目标，故不选室友关系标签。",
+  "ok": true,
+  "input_sig": "077f5e7ea4604ad95325bbc9ff91de13cc9abdd6149bacea923b552b44adaf7e",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:55:02.582917+00:00"
+}

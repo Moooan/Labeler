@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S195"
+  ],
+  "reason": "发言明确求助改善拖延和启动困难，对应执行力标签；沉溺幻想与执行功能障碍无更精确标签，用户归因于压力而非怀疑ADHD或询问就医，故不选S218等其他场景。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-29T10:49:45.312315+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

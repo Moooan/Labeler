@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S098"
+  ],
+  "reason": "实际求助目标是大学四年整体规划，对应S098在校阶段规划；绩点、社团、竞赛、升学就业仅为规划涵盖要素，属偶然词语，不足以单列S065/S094/S096/S099等标签。",
+  "title": "准大一新生规划大学四年，兼顾绩点社团竞赛与升学就业",
+  "ok": true,
+  "input_sig": "63eb754aa3571bdc124ee437acdbfcd1aac94d2b543b63d848aa2a009ab79cdb",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:34:54.675861+00:00"
+}

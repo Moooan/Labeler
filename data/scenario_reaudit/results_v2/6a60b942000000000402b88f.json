@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S177"
+  ],
+  "reason": "发言询问单篇笔记走红的原理和方法，核心诉求是自媒体曝光与流量增长，对应S177；无其他充分依据的场景。",
+  "title": "探究一条笔记爆火的流量增长方法",
+  "ok": true,
+  "input_sig": "ef659f6ed962947c116437b771cbf61db598cad1df97f8f8651efc490b120a19",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:00:14.998314+00:00"
+}

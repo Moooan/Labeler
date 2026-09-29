@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言是对MBTI类型划分逻辑的知识性讨论，非个人规划求助；拖延仅为话题引子，未求助拖延改善（S194），也未涉及性格特质与职业方向的自我探索（S234），属于域外内容。",
+  "title": "ISTP拖延严重为何被归为J人的MBTI分类疑问",
+  "ok": true,
+  "input_sig": "edfb771809f3b450eee9eaeb077154fb1e15a649574b6d332e4a85be57c07c22",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:07:54.513958+00:00"
+}

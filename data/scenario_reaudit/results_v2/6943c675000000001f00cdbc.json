@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068"
+  ],
+  "reason": "大一新生询问摆烂程度与挂科的关系，核心是对挂科条件及其影响的了解，归属在校学业-学业异常-挂科场景。",
+  "title": "大一新生想知道摆烂到什么程度会挂科",
+  "ok": true,
+  "input_sig": "1ba0f7c3fef18d4a11bb8e475b3548d30049a211bba67ecc519ad487b3aaebf0",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:04:42.534980+00:00"
+}

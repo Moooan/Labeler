@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S070",
+    "S068"
+  ],
+  "reason": "用户上学期挂科一门必修课，核心求助是重修成绩能否覆盖挂科记录及后续影响，直接对应重修(S070)和挂科影响(S068)两个场景，无充分依据归入其他标签。",
+  "ok": true,
+  "input_sig": "00d61cae1c3fc77e7b2d9030a96bba5b12dbfb3e1afd61abb40b9c7b386e7720",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:56:57.960031+00:00"
+}

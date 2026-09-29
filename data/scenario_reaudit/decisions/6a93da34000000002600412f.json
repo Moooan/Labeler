@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S097"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-29T10:39:57.404407+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

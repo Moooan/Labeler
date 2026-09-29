@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S081"
+  ],
+  "reason": "发言实际求助目标是论文中已建模型的验证方法，属于建模与结果解释范畴，对应论文毕设下的数据分析；无其他充分依据的场景。",
+  "title": "硕士论文中跑出的模型如何验证正确性",
+  "ok": true,
+  "input_sig": "7f1881e29568dae9f0d0ee0f293e462c9b9d70ebc50ef288eb8ee8577c36eed1",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:58:45.422420+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "insufficient",
+  "scenarios": [],
+  "reason": "用户仅表达愿付费快速找人解决紧急问题的元需求，未说明问题所属领域（升学、就业、职场等均未提及），无法匹配任何具体场景标签。",
+  "title": "紧急问题愿付费加急，询问如何快速找到能帮忙的人",
+  "ok": true,
+  "input_sig": "d18264fed602a06dfaeed795a4284790fe1819950f908ee3ab849bf123443466",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:19:07.939296+00:00"
+}

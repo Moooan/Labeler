@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S123"
+  ],
+  "reason": "实际求助是评估法学生假期短期实习是否值得及如何规划更有意义，属于实习方向与机会规划问题，未见多个offer比较或实习期间适应等情形，故归S123。",
+  "title": "法学生假期1-2个月律所法院实习价值与规划",
+  "ok": true,
+  "input_sig": "a87f578673b06e9b9c0934b4dfb8d1e2a31c137f2bf5dccae9dff2d8445f0e49",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:29:40.925821+00:00"
+}

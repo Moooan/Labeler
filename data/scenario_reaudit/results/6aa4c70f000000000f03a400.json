@@ -1,0 +1,12 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S077"
+  ],
+  "reason": "硕论求助且\"没有任何思路\"，指向论文选题/研究方向无头绪，最贴切为论文毕设下的选题场景；未提及开题、写作或数据等更具体环节。",
+  "ok": true,
+  "input_sig": "e5a5e7e25a573bcd2fabe490a565f6509d23e731607e891c0a01b51e7450fca5",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:54:11.927390+00:00"
+}

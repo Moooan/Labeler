@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S197"
+  ],
+  "reason": "用户自述总是拖延并求助提高执行力和自律，明确对应拖延（S194）与自律坚持（S197）；发言无具体学业或职业情境，MBTI仅为自我描述背景",
+  "title": "INTP自认爱拖延，如何提高执行力与自律",
+  "ok": true,
+  "input_sig": "85836a89ab2bbb44b9ff8087bf7d2e7223f897394c580577738afa82ac75891b",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:06:30.547793+00:00"
+}

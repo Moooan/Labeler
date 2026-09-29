@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S098"
+  ],
+  "reason": "发言明确为大一新生求大学四年的个人学习规划，与S098在校阶段整体规划直接对应；未涉及选课、绩点、升学路径等更具体场景，不额外添加标签。",
+  "title": "大一新生制定大学四年学习规划",
+  "ok": true,
+  "input_sig": "b01b3f7a0ef7e0d46922206e4a309d9a23b3536fa5c5ad4fb2f826f0dffb08dc",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:28:13.503331+00:00"
+}

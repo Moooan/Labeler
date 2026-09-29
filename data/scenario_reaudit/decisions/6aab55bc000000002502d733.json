@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言仅询问在哪里找一对一辅导老师，未说明辅导科目、考试阶段或目标（如高考、专升本、考研等），无法判断对应具体备考场景，信息不足。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-29T10:53:07.217398+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S212"
+  ],
+  "reason": "发言的实际求助目标是追求喜欢的人及与crush聊天的方法，属于恋爱/亲密关系范畴，匹配S212；无需其他标签。",
+  "title": "完全不认识的crush如何开始接触和聊天",
+  "ok": true,
+  "input_sig": "bb21963442d257ecf5950bcd7ee7fe1e9ef5e83cb6f3d25771e4c3f9785c1b87",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:11:43.772617+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S204"
+  ],
+  "reason": "发言核心求助是自述严重拖延、厌恶deadline，导致教师岗位备课压力下天天焦虑，问如何调整；实际求助目标指向拖延应对与焦虑情绪调节，职场教师情境为背景而非独立诉求。",
+  "title": "INFP新教师因拖延面对备课deadline天天焦虑如何调整",
+  "ok": true,
+  "input_sig": "70ef298393e36ced2644c1300cbe90d077be01fdd5e4881887340d1d8b6829da",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:13:15.006067+00:00"
+}

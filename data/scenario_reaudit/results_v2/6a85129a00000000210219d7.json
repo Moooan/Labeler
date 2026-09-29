@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068"
+  ],
+  "reason": "实际求助是评估挂科影响：学校无保研资格、已确定考研、不求奖学金背景下挂科是否影响大，对应挂科标签；室友矛盾仅为背景陈述，非求助目标",
+  "title": "无保研资格且确定考研时工科挂科影响评估",
+  "ok": true,
+  "input_sig": "077f5e7ea4604ad95325bbc9ff91de13cc9abdd6149bacea923b552b44adaf7e",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:02:46.052541+00:00"
+}

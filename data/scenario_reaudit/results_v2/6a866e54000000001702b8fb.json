@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S104"
+  ],
+  "reason": "用户已有明确行业方向（金融），核心诉求是评估gap三年这一职业空档对中长期发展的影响，属于职业长期规划范畴；无信息显示其在探索方向、待业无offer或情绪困扰，故不选S234/S130/S205",
+  "title": "金融行业gap三年对未来职业发展的影响",
+  "ok": true,
+  "input_sig": "e7eaea586a296c50a1349abbb43c2964284e07406abf437fd5ca5da9cb7124c6",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:29:16.271494+00:00"
+}

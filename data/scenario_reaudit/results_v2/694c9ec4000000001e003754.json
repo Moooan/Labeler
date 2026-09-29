@@ -1,0 +1,12 @@
+{
+  "status": "insufficient",
+  "scenarios": [],
+  "reason": "实际求助目标是评估是否花钱购买职业规划服务，属于服务消费决策，未说明想解决的具体规划问题（如保研去向、职业方向等），无法映射到给定场景标签",
+  "title": "保研资格到手，几百到几万的职业规划服务是否值得买",
+  "title_fallback": false,
+  "ok": true,
+  "input_sig": "963e0d60105a00b8c24dc8809c0c469670ca70af0afd974d7abdffe4d8213757",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:49:07.764131+00:00"
+}

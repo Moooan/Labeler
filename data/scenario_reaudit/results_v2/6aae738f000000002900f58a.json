@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S098"
+  ],
+  "reason": "用户明确求助研究生三年整体规划，属在校阶段规划场景；未涉及具体科研、升学或就业子问题，不外推其他标签",
+  "title": "研0未做好规划，现在补做研究生三年整体规划",
+  "ok": true,
+  "input_sig": "10cf029ab2a4764c32769c22aad2e4a9f9af0728efd6233b20cde92d2aee5ac5",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:28:44.819902+00:00"
+}

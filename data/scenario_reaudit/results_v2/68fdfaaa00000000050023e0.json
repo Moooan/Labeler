@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194"
+  ],
+  "reason": "发言核心求助是克服长期拖延且愈发失控，直接对应S194拖延；INTP仅为自我标签，无其他阶段或领域信息，不足以匹配其他标签。",
+  "title": "INTP重度拖延因从未付出代价屡改不掉如何克服",
+  "ok": true,
+  "input_sig": "59a46b88febd16a40e4c5b336b0b3505c5924e1efc9a54d83d23e52719b58fa7",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:05:24.003085+00:00"
+}

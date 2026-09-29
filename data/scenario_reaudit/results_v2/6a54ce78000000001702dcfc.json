@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S218",
+    "S212"
+  ],
+  "reason": "发言明确为ADHD确诊后的现实困扰，核心求助是如何面对伴侣可能的排斥，同时涉及亲密关系接纳，故归ADHD相关与亲密关系两场景。",
+  "title": "确诊ADHD后担心伴侣因此不接受自己",
+  "ok": true,
+  "input_sig": "85dd648fa9ffbde99894799174706fad2e1b4e75877d1c0597e9b1b06d288f3f",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:17:45.077658+00:00"
+}

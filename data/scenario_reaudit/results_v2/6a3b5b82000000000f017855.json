@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S218",
+    "S194"
+  ],
+  "reason": "用户明确自述患有ADHD，核心诉求是寻找适合ADHD的拖延改善方法，故选S218（ADHD相关）与S194（拖延）；透支情绪仅为论述背景，无充分依据支持其他标签。",
+  "title": "ADHD不适合靠意志力催干劲，求改善拖延的方法",
+  "ok": true,
+  "input_sig": "d35393b60c3e41fa044dc2f30628c37795b2bdcec365be35c9130be3a8fde983",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:13:02.308257+00:00"
+}

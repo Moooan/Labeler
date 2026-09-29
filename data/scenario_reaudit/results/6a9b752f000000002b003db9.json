@@ -1,0 +1,6 @@
+{
+  "ok": false,
+  "error": "LLMError：生成或校验失败，可重试",
+  "attempts": 2,
+  "updated_at": "2026-09-29T09:57:34.140795+00:00"
+}

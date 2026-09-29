@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言主体是职业咨询师对行业价值的观点陈述与自我宣传（强调低价、陪伴来访者等），结尾提问为互动式话题，非本人具体生涯求助；即便视为咨询性价比疑问，也超出标签体系覆盖场景，故标为drop",
+  "title": "花几千元做职业咨询值不值及服务价值判断",
+  "ok": true,
+  "input_sig": "68f800d79a6cb5d3c5b455a901b2d1212ce2bf6b2ba6fc6d25af42d4aecc3dad",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:42:38.359366+00:00"
+}

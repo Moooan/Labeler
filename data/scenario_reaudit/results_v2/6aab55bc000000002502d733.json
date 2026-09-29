@@ -1,0 +1,11 @@
+{
+  "status": "insufficient",
+  "scenarios": [],
+  "reason": "发言仅询问在哪里找一对一辅导老师，未说明辅导科目、考试阶段或目标（如高考、专升本、考研等），无法判断对应具体备考场景，信息不足。",
+  "title": "寻找靠谱一对一辅导老师的渠道",
+  "ok": true,
+  "input_sig": "747be9e3481fbec5f0047e3af5fe3aa23778e9626eef09b7081cfabaa3a4d513",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:18:42.655719+00:00"
+}

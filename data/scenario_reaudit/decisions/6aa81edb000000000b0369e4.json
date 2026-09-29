@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S058"
+  ],
+  "reason": "实际求助目标是完成大学课程的信息可视化作业（含请人代做及寻找接单渠道），核心场景为在校课程作业，归入S058；文本无其他可依据的标签。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-29T11:05:42.201203+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

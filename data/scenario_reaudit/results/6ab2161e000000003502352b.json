@@ -1,0 +1,10 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "实际求助目标是追回被骗资金与维权处理，属域外问题，三级标签体系中无对应场景；发言未提及兼职等上下文，不能归入S174兼职避坑，也与S215债务（负债还款压力）不符",
+  "ok": true,
+  "input_sig": "2de30fb53746daef2072f073b2b95dc0d1cceed1e5b1e3086bcbbd343c2d7701",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:51:37.390506+00:00"
+}

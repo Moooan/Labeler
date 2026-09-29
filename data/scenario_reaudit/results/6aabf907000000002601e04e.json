@@ -1,0 +1,12 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S058"
+  ],
+  "reason": "用户明确求助完成大学课程作业（数智大数据技术应用与开发），抱怨操作困难，属于课程作业理解与完成场景；其余升学、论文、考证等标签无文本依据",
+  "ok": true,
+  "input_sig": "eeabcaef215e300ab6e0b1764e087e3334e01bc2678faa0a534d1c12bb9b1c65",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:52:36.515377+00:00"
+}

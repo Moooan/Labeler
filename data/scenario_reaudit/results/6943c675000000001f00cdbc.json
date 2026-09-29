@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068",
+    "S062"
+  ],
+  "reason": "大一新生询问大学里摆到什么程度会挂科，实际求助目标是了解挂科的条件和及格门槛，核心话题为挂科，并涉及课程考试考核要求，故归入挂科与课程考试场景",
+  "ok": true,
+  "input_sig": "1ba0f7c3fef18d4a11bb8e475b3548d30049a211bba67ecc519ad487b3aaebf0",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:57:28.523960+00:00"
+}

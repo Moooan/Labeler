@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S168"
+  ],
+  "reason": "发言明确求助为面馆品牌命名与LOGO创意，强调记忆点以吸引顾客，属于开店前的品牌营销环节，最贴近获客销售；项目方向已定，不涉及创业方向选择",
+  "title": "融入老板名字的重庆板凳面馆品牌名与LOGO创意",
+  "ok": true,
+  "input_sig": "c36731aea6f9514bf056011eb5ab549ef555175083155e4c8eefc9238aa6baf9",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T10:13:49.053634+00:00"
+}

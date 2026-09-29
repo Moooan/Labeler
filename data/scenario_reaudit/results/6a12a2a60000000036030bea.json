@@ -1,0 +1,10 @@
+{
+  "status": "insufficient",
+  "scenarios": [],
+  "reason": "发言仅表达对献血后出现某种状况的困惑，未说明具体症状、背景或求助内容，无法判断对应任何给定场景。",
+  "ok": true,
+  "input_sig": "e8f55bfeeed2cad096d3d457943043005779ef8a9f87359085eca0520254d6b9",
+  "model": "glm-5.3-flash",
+  "attempts": 1,
+  "updated_at": "2026-09-29T09:52:18.548534+00:00"
+}

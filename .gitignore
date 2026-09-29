@@ -26,10 +26,3 @@ data/reaudit-lan.log
 pytest-cache-files-*/
 data/test_*/
 data/context_preview_backup_*/
-
-# 人工评测与复审运行数据仅保留本机
-data/context_preview/
-data/scenario_reaudit/
-data/adjudications/
-data/rewrites/*.json
-exports/复核/改写/*.xlsx
