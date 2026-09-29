@@ -1,6 +1,7 @@
 # 密钥绝不入库（CLAUDE.md 红线）
 .env
 **/.env.local
+.DS_Store
 
 # Python 运行产物
 .venv/
@@ -13,5 +14,22 @@ labeler.egg-info/
 build/
 dist/
 
-# macOS
-.DS_Store
+# 本机运行日志、截图和诊断结果
+*.log
+*.png
+preview-proxy-result.txt
+data/reaudit-check.js
+data/reaudit-lan.log
+
+# 本机测试临时目录
+.test-*/
+pytest-cache-files-*/
+data/test_*/
+data/context_preview_backup_*/
+
+# 人工评测与复审运行数据仅保留本机
+data/context_preview/
+data/scenario_reaudit/
+data/adjudications/
+data/rewrites/*.json
+exports/复核/改写/*.xlsx

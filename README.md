@@ -52,6 +52,16 @@ python3.12 -m venv .venv
 
 ## 网页复核 / 裁决 / 改写台
 
+### 服务端口速查
+
+| 端口 | 页面 | 用途 | 主要数据目录 |
+| --- | --- | --- | --- |
+| `8890` | `/`、`/adjudicate`、`/rewrite` | 原始单人复核、双人裁决和改写台 | `data/review_sessions`、`data/adjudications`、`data/rewrites` |
+| `8891` | `/` | 独立审核和编辑 context、query、知识库内容 | `data/context_preview` |
+| `8892` | `/` | 拼接最终 context＋query，比较两位人工与 AI 后重新审核场景 | `data/scenario_reaudit` |
+
+三个服务的数据互相隔离。8892 只读取 8890、8891 的快照来源，定稿写入自己的目录，不会覆盖前两个端口。完整启动方式与局域网说明见 [PORTS.md](PORTS.md)。
+
 ```bash
 .venv/bin/python -m labeler.review_server            # 默认 127.0.0.1:8890
 .venv/bin/python -m labeler.review_server --no-llm   # 不配 AI 草稿时
