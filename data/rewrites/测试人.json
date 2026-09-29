@@ -1,0 +1,1 @@
+{"6a65a2560000000013026822": {"note_id": "6a65a2560000000013026822", "final_status": "keep", "scenarios": ["S001"], "intents": ["I01"], "persona": [], "missing_info": "", "comment": "", "rewrite": "测试问句：大三纠结考研还是就业", "draft": "", "based_on": "机器(两人分歧)", "operator": "测试人", "updated_at": "2026-09-28T08:00:03+00:00"}}

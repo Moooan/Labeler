@@ -1,0 +1,17 @@
+# 密钥绝不入库（CLAUDE.md 红线）
+.env
+**/.env.local
+
+# Python 运行产物
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+labeler.egg-info/
+build/
+dist/
+
+# macOS
+.DS_Store

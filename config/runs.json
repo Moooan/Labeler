@@ -1,0 +1,27 @@
+{
+  "runs": {
+    "glm53flash_v1": {
+      "model": "glm-5.3-flash",
+      "prompt": "v1",
+      "protocol": "workbuddy",
+      "temperature": 0.1,
+      "max_tokens": 10000,
+      "_note": "GLM5.3 是推理模型，thinking 块吃 token，预算不足会只回 thinking 无正文；6000 时多条长笔记失败，8000 仍剩 1 条顽固失败，提到 10000。前 307 条走 Anthropic 端点，其余走 WorkBuddy 云服务（同模型同参数）"
+    },
+    "glm53_v1": {
+      "model": "glm-5.3",
+      "prompt": "v1",
+      "protocol": "anthropic",
+      "temperature": 0.1,
+      "max_tokens": 6000
+    },
+    "chuangye1000": {
+      "model": "glm-5.3-flash",
+      "prompt": "cy_v1",
+      "protocol": "workbuddy",
+      "temperature": 0.1,
+      "max_tokens": 10000,
+      "_note": "创业1000问批：只标 Q（问题原文+章节），数据 data/chuangye1000_notes.jsonl；参数同 glm53flash_v1。运行时必须带 --notes data/chuangye1000_notes.jsonl"
+    }
+  }
+}

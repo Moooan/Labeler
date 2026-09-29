@@ -1,0 +1,6 @@
+{
+  "applicationId": "wbapp_bClvefEIuANkmSSiUEN3RK",
+  "endpoint": "https://xhs-note-labeler.app.workbuddy.host",
+  "publishableKey": "wbpk_bClvefEIuANkmSSiUEN3RK_tuUwemDQDSYed8ZuJbWmZFKD11Fgkvs7",
+  "_note": "WorkBuddy 云服务 publicConfig（activate 返回）。publishableKey 仅标识应用、无独立权限，但勿打印勿入库到公开仓库"
+}

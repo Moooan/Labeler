@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>PathPal 改写台</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font: 14px/1.6 -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+         background: #f5f6f8; color: #222; display: flex; flex-direction: column; height: 100vh; }
+  header { background: #fff; border-bottom: 1px solid #e2e4e8; padding: 10px 16px;
+           display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  header h1 { font-size: 16px; color: #334155; }
+  header select, header input { padding: 4px 8px; border: 1px solid #cbd5e1;
+           border-radius: 6px; font: inherit; background: #fff; }
+  .pair { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #334155; }
+  .arrow { color: #64748b; }
+  #meta { color: #64748b; font-size: 13px; }
+  #bar { flex: 1; min-width: 140px; height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
+  #bar > div { height: 100%; background: #22c55e; width: 0; transition: width .3s; }
+  button { border: 1px solid #cbd5e1; background: #fff; border-radius: 6px; padding: 5px 12px;
+           cursor: pointer; font-size: 13px; }
+  button:hover { background: #f1f5f9; }
+  button:disabled { opacity: .45; cursor: not-allowed; }
+  button.primary { background: #2563eb; border-color: #2563eb; color: #fff; }
+  button.primary:hover { background: #1d4ed8; }
+  main { flex: 1; display: flex; overflow: hidden; }
+  #side { width: 260px; background: #fff; border-right: 1px solid #e2e4e8; display: flex; flex-direction: column; }
+  #filters { padding: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
+  #filters button { padding: 2px 8px; font-size: 12px; border-radius: 999px; }
+  #filters button.on { background: #2563eb; color: #fff; border-color: #2563eb; }
+  #list { flex: 1; overflow-y: auto; }
+  #list .item { padding: 6px 10px; cursor: pointer; border-bottom: 1px solid #f1f5f9;
+                display: flex; gap: 6px; align-items: baseline; }
+  #list .item:hover { background: #f8fafc; }
+  #list .item.cur { background: #eff6ff; }
+  #list .t { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #334155; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; position: relative; top: -1px; }
+  .dot.needrw { background: #f59e0b; }
+  .dot.done { background: #22c55e; } .dot.dropped { background: #64748b; }
+  .dot.todo { background: #cbd5e1; }
+  .bkt { flex: none; font-size: 11px; color: #64748b; border: 1px solid #e2e8f0;
+         border-radius: 4px; padding: 0 3px; line-height: 1.4; }
+  #panel { flex: 1; overflow-y: auto; padding: 18px 22px; }
+  .card { background: #fff; border: 1px solid #e2e4e8; border-radius: 10px; padding: 16px 18px;
+          margin-bottom: 14px; }
+  .card h2 { font-size: 13px; color: #64748b; margin-bottom: 8px; font-weight: 600; }
+  #title { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+  #desc { white-space: pre-wrap; word-break: break-word; color: #334155; max-height: 220px;
+          overflow-y: auto; background: #f8fafc; padding: 10px; border-radius: 8px; }
+  #cmp { display: grid; gap: 10px; }
+  #cmp .col { border: 1px solid #e2e4e8; border-radius: 8px; padding: 10px; font-size: 13px; }
+  #cmp .col h3 { font-size: 13px; margin-bottom: 6px; }
+  #cmp .col.a h3 { color: #2563eb; } #cmp .col.b h3 { color: #7c3aed; }
+  #cmp .col.x h3 { color: #94a3b8; } #cmp .col.m h3 { color: #94a3b8; }
+  #cmp .col.s { border-color: #86efac; background: #f0fdf4; }
+  #cmp .col.s h3 { color: #16a34a; }
+  #cmp .col .sec { margin-bottom: 6px; color: #334155; white-space: pre-wrap; word-break: break-word; }
+  #cmp .col .lbl { color: #94a3b8; font-size: 12px; }
+  #cmp .col.diff { border-color: #fca5a5; background: #fef2f2; }
+  .badge { display: inline-block; font-size: 11px; border-radius: 4px; padding: 0 5px;
+           margin-left: 4px; color: #fff; background: #16a34a; vertical-align: 1px; }
+  .badge.warn { background: #ef4444; } .badge.gray { background: #94a3b8; }
+  .quick { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+  #triage { display: flex; gap: 10px; align-items: center; padding: 8px 10px;
+            background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; flex-wrap: wrap; }
+  #triage .q { font-weight: 700; color: #334155; }
+  button.tg { padding: 5px 13px; font-size: 13px; }
+  button.tg.keep.on { background: #16a34a; border-color: #16a34a; color: #fff; }
+  button.tg.drop.on { background: #ef4444; border-color: #ef4444; color: #fff; }
+  button.tg.ins.on { background: #a855f7; border-color: #a855f7; color: #fff; }
+  #no-label-hint { margin-top: 8px; padding: 8px 12px; background: #f8fafc; border-radius: 8px;
+                   color: #64748b; font-size: 13px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { border: 1px solid #cbd5e1; border-radius: 999px; padding: 3px 10px; cursor: pointer;
+          background: #fff; font-size: 13px; user-select: none; }
+  .chip.on { background: #2563eb; color: #fff; border-color: #2563eb; }
+  .chip.sel { background: #dbeafe; border-color: #2563eb; color: #1e40af; }
+  .chip.sel b { cursor: pointer; margin-left: 6px; }
+  .treebar { display: flex; gap: 8px; margin: 8px 0; align-items: center; }
+  #search { flex: 1; padding: 6px 10px; border: 1px solid #cbd5e1; border-radius: 6px; }
+  #tree { border: 1px solid #e2e4e8; border-radius: 8px; max-height: 380px; overflow-y: auto; }
+  .l1h { padding: 6px 12px; font-weight: 700; cursor: pointer; background: #f8fafc;
+         border-bottom: 1px solid #eef2f6; user-select: none; display: flex; gap: 8px; align-items: center; }
+  .l1h .cnt { color: #2563eb; font-weight: 700; }
+  .l1b.closed > .l2b { display: none; }
+  .l2b.closed > .leaf { display: none; }
+  .l2h { padding: 4px 12px 4px 34px; font-weight: 600; color: #475569; cursor: pointer;
+         user-select: none; font-size: 13px; }
+  .leaf { display: flex; gap: 8px; align-items: baseline; padding: 3px 12px 3px 52px;
+          cursor: pointer; border-radius: 4px; }
+  .leaf:hover { background: #f1f5f9; }
+  .leaf.checked { background: #eff6ff; }
+  .leaf input { position: relative; top: 2px; }
+  .leaf .id { color: #2563eb; font-weight: 600; font-size: 12px; flex: none; }
+  .leaf .name { flex: none; }
+  .leaf .def { color: #94a3b8; font-size: 12px; white-space: nowrap; overflow: hidden;
+               text-overflow: ellipsis; flex: 1; min-width: 0; }
+  .leaf.hidden { display: none; }
+  textarea { width: 100%; border: 1px solid #cbd5e1; border-radius: 6px; padding: 6px 10px; font: inherit; }
+  #rewrite { min-height: 64px; }
+  .rwhint { display: flex; justify-content: space-between; color: #94a3b8; font-size: 12px; margin-top: 4px; }
+  #drafthint:empty { display: none; }
+  .actions { display: flex; gap: 10px; align-items: center; margin: 4px 0 30px; }
+  #saved { color: #16a34a; font-size: 13px; }
+  #toast { position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: #fff;
+           padding: 8px 16px; border-radius: 8px; font-size: 13px; opacity: 0;
+           transition: opacity .3s; pointer-events: none; max-width: 60vw; }
+  #empty { padding: 60px 20px; text-align: center; color: #64748b; }
+</style>
+</head>
+<body>
+<header>
+  <h1>改写台</h1>
+  <span class="pair">复核人
+    <select id="pickA"></select><span class="arrow">vs</span><select id="pickB"></select>
+  </span>
+  <span class="pair">操作人 <input id="who" placeholder="填名字" autocomplete="off"></span>
+  <span id="meta"></span>
+  <div id="bar"><div></div></div>
+  <button id="btn-export" class="primary">导出最终改写</button>
+</header>
+<main>
+  <div id="side">
+    <div id="filters"></div>
+    <div id="list"></div>
+  </div>
+  <div id="panel">
+    <div id="empty">← 先在上方选择两位复核人。建议定稿 = 双人一致 &gt; 单人复核 &gt; 机器；分歧条目预填机器标签等你定夺</div>
+    <div id="content" style="display:none">
+      <div class="card">
+        <div id="title"></div>
+        <div id="desc"></div>
+        <div class="rwhint" style="margin-top:6px">
+          <span>改写参考：</span>
+          <span>
+            <button id="btn-use-title" style="padding:1px 8px;font-size:12px">用标题填改写框</button>
+            <button id="btn-use-desc" style="padding:1px 8px;font-size:12px">用正文填改写框</button>
+          </span>
+        </div>
+      </div>
+      <div class="card">
+        <h2>标签来源（红框 = 选中的两位有分歧；绿框 = 建议定稿）</h2>
+        <div id="cmp"></div>
+      </div>
+      <div class="card">
+        <h2>定稿</h2>
+        <div class="quick">
+          <button id="q-s" class="primary" style="font-weight:600">✔ 采纳建议</button>
+          <button id="q-a">以左为准</button>
+          <button id="q-b">以右为准</button>
+          <button id="q-m">以机器为准</button>
+        </div>
+        <div id="triage">
+          <span class="q">最终：</span>
+          <button class="tg keep on" data-v="keep">✔ 保留</button>
+          <button class="tg drop" data-v="drop">✘ 不需要</button>
+          <button class="tg ins" data-v="insufficient">⚠ 缺少信息</button>
+        </div>
+        <div id="no-label-hint" style="display:none"></div>
+      </div>
+      <div class="card" id="card-scen">
+        <h2 id="sel-title"></h2>
+        <div class="chips" id="sel-chips"></div>
+        <div class="treebar">
+          <input id="search" placeholder="过滤标签" autocomplete="off">
+          <button id="btn-expand">展开全部</button>
+          <button id="btn-collapse">收起全部</button>
+        </div>
+        <div id="tree"></div>
+      </div>
+      <div class="card" id="card-intent">
+        <h2>最终意图</h2>
+        <div id="intents" class="chips"></div>
+      </div>
+      <div class="card" id="card-persona">
+        <h2>最终画像（每行一条「字段: 值 [明确/推测]」，删行=剔除该字段）</h2>
+        <textarea id="persona" rows="3"></textarea>
+      </div>
+      <div class="card" id="card-missing" style="display:none">
+        <h2>需补充信息</h2>
+        <textarea id="missing" rows="2"></textarea>
+      </div>
+      <div class="card">
+        <h2 style="display:flex;align-items:center;gap:10px">
+          改写（背景 context + 标准问法 query）
+          <button id="btn-draft" style="padding:2px 10px;font-size:12px">✨ AI 草稿</button>
+          <span id="drafthint" style="font-weight:400"></span>
+        </h2>
+        <textarea id="ctx" rows="5" placeholder="背景 context：原帖清洗版——保留原文风格与全部信息，只去掉标签/表情/平台用语，不概括"></textarea>
+        <textarea id="rewrite" style="margin-top:8px" placeholder="query：例：大三准备专升本，担心家里因费用不支持，想评估升本的可行性和风险"></textarea>
+        <div class="rwhint"><span>保留的笔记必须有 query 这条才算完成（context 可选）</span><span id="rwlen"></span></div>
+      </div>
+      <div class="card">
+        <h2>备注</h2>
+        <textarea id="comment" rows="2"></textarea>
+      </div>
+      <div class="actions">
+        <button id="btn-prev">← 上一条</button>
+        <button id="btn-save" class="primary">保存并下一条（Ctrl+Enter）</button>
+        <span id="saved"></span>
+      </div>
+    </div>
+  </div>
+</main>
+<div id="toast"></div>
+<script>
+let S = null, cur = 0, dirty = false, filter = 'pending', sel = [], verdict = 'keep';
+let basedOn = '', draftCache = '';
+let op = localStorage.getItem('pp_rewriter') || '';
+const expanded = { l1: new Set(), l2: new Set() };
+const VERDICT_CN = { keep: '保留', drop: '不需要', insufficient: '缺少信息', skip: '跳过' };
+const BUCKET_CN = { agree: '双人一致', drop: '双剔除', conflict: '两人分歧',
+                    single: '仅单人', machine: '仅机器' };
+const BUCKET_TAG = { agree: '双', drop: '剔', single: '单', conflict: '歧', machine: '机' };
+
+const $ = id => document.getElementById(id);
+const toast = m => { const t = $('toast'); t.textContent = m; t.style.opacity = 1;
+                     clearTimeout(t._h); t._h = setTimeout(() => t.style.opacity = 0, 2500); };
+const noteOf = i => S.notes[i];
+const recOf = i => (S.session || {})[noteOf(i).note_id];
+
+async function fetchState() {
+  const q = `left=${encodeURIComponent($('pickA').value)}` +
+            `&right=${encodeURIComponent($('pickB').value)}` +
+            `&operator=${encodeURIComponent(op)}`;
+  S = await (await fetch('/api/rewrite/state?' + q)).json();
+  const has = S.notes && S.notes.length;
+  $('empty').style.display = has ? 'none' : '';
+  $('content').style.display = has ? '' : 'none';
+  if (!has) return;
+  if (!document.querySelector('#tree .l1b')) buildTree();
+  renderList(); if (cur >= S.notes.length) cur = 0; renderNote(); updateMeta();
+}
+
+function classify(i) {
+  const r = recOf(i);
+  if (r) {
+    if (r.final_status === 'drop') return 'dropped';
+    if (!(r.rewrite || '').trim()) return r.final_status ? 'needrw' : 'todo';
+    return 'done';
+  }
+  return 'todo';
+}
+
+function matchFilter(i) {
+  if (filter === 'all') return true;
+  if (filter === 'pending') return ['todo', 'needrw'].includes(classify(i));
+  if (filter === 'done' || filter === 'dropped') return classify(i) === filter;
+  const b = noteOf(i).suggested.bucket;         // 分桶筛（不管完没完成）
+  return filter === 'agree' ? (b === 'agree' || b === 'drop') : b === filter;
+}
+
+function updateMeta() {
+  const c = S.counts || {};
+  $('bar').firstElementChild.style.width = (100 * (c.done || 0) / S.total) + '%';
+  $('meta').textContent =
+    `${S.left} vs ${S.right} · 完成 ${c.done || 0}/${S.total} · 改写 ${c.rewritten || 0}` +
+    ` ｜ 一致 ${c.agree || 0} 剔除 ${c.drop || 0} 分歧 ${c.conflict || 0}` +
+    ` 单人 ${c.single || 0} 机器 ${c.machine || 0}`;
+}
+
+function renderList() {
+  [...$('filters').children].forEach(b => b.classList.toggle('on', b.dataset.k === filter));
+  $('list').innerHTML = '';
+  S.notes.forEach((n, i) => {
+    if (!matchFilter(i)) return;
+    const d = document.createElement('div');
+    d.className = 'item' + (i === cur ? ' cur' : '');
+    d.innerHTML = `<span class="dot ${classify(i)}"></span>` +
+      `<span class="bkt">${BUCKET_TAG[n.suggested.bucket] || '?'}</span>` +
+      `<span class="t">${n.title || n.note_id}</span>`;
+    d.onclick = () => go(i);
+    $('list').appendChild(d);
+  });
+}
+
+function sideSummary(s) {
+  if (!s) return null;
+  return {
+    v: VERDICT_CN[s.status] || s.status || '（无状态）',
+    scen: (s.scenarios || []).join(' ') || '（无）',
+    int: (s.intents || []).join(' ') || '（无）',
+    per: (s.persona || []).length,
+    miss: s.missing_info || '', com: s.comment || '',
+  };
+}
+
+function renderCmp() {
+  const n = noteOf(cur);
+  const col = (cls, name, s, diff, badge) => {
+    const x = s ? `
+      <div class="sec"><span class="lbl">分诊：</span>${s.v}</div>
+      <div class="sec"><span class="lbl">场景：</span>${s.scen}</div>
+      <div class="sec"><span class="lbl">意图：</span>${s.int}</div>
+      <div class="sec"><span class="lbl">需补充：</span>${s.miss || '—'}</div>
+      <div class="sec"><span class="lbl">备注：</span>${s.com || '—'}</div>` : '';
+    return `<div class="col ${cls}${diff ? ' diff' : ''}">
+      <h3>${name}${badge || ''}</h3>${x}</div>`;
+  };
+  const cols = [];
+  for (const sd of (n.sides || [])) {
+    const isL = sd.session === S.left, isR = sd.session === S.right;
+    const pair = isL || isR;
+    cols.push(col(pair ? (isL ? 'a' : 'b') : 'x',
+                  pair ? `${sd.session} · ${isL ? '左' : '右'}` : sd.session,
+                  sideSummary(sd), n.cmp.kind === 'conflict' && pair));
+  }
+  cols.push(col('m', '机器原判', {
+    v: '机器', scen: n.machine.scenarios.map(s => s.id).join(' ') || '（无）',
+    int: n.machine.intents.map(i => i.id).join(' ') || '（无）',
+    miss: '', com: '',
+  }));
+  const g = n.suggested;
+  const bcls = g.bucket === 'conflict' ? 'warn' : (g.bucket === 'machine' ? 'gray' : '');
+  cols.push(col('s', `建议定稿<span class="badge ${bcls}">${BUCKET_CN[g.bucket]}</span>`, {
+    v: `${VERDICT_CN[g.final_status] || g.final_status}（${g.based_on}）`,
+    scen: (g.scenarios || []).join(' ') || '（无）',
+    int: (g.intents || []).join(' ') || '（无）',
+    miss: g.missing_info || '', com: '',
+  }));
+  $('cmp').style.gridTemplateColumns = `repeat(${cols.length}, 1fr)`;
+  $('cmp').innerHTML = cols.join('');
+  $('q-a').disabled = !n.sides.find(x => x.session === S.left);
+  $('q-b').disabled = !n.sides.find(x => x.session === S.right);
+}
+
+function applySide(which) {
+  const n = noteOf(cur);
+  let s = null, name = '';
+  if (which === 's') {
+    s = { scenarios: n.suggested.scenarios, intents: n.suggested.intents,
+          persona: n.suggested.persona, status: n.suggested.final_status,
+          missing_info: n.suggested.missing_info };
+    name = n.suggested.based_on || '建议';
+  } else if (which === 'm') {
+    s = { scenarios: n.machine.scenarios.map(x => x.id),
+          intents: n.machine.intents.map(x => x.id), persona: n.machine.persona,
+          status: 'keep', missing_info: '' };
+    name = '机器';
+  } else {
+    const sd = n.sides.find(x => x.session === (which === 'a' ? S.left : S.right));
+    if (!sd) return;
+    s = sd; name = sd.session;
+  }
+  sel = [...(s.scenarios || [])];
+  renderIntentChips([...(s.intents || [])]);
+  $('persona').value = (s.persona || []).join('\n');
+  $('missing').value = s.missing_info || '';
+  verdict = ['keep', 'drop', 'insufficient'].includes(s.status) ? s.status : 'keep';
+  basedOn = name;
+  syncTriage(); renderSel(); updateTree(); mark();
+}
+
+function renderIntentChips(onIds) {
+  $('intents').innerHTML = '';
+  for (const it of S.intents) {
+    const c = document.createElement('span');
+    c.className = 'chip' + (onIds.includes(it.id) ? ' on' : '');
+    c.textContent = `${it.id} ${it.name}`;
+    c.dataset.id = it.id;
+    c.onclick = () => { c.classList.toggle('on'); mark(); };
+    $('intents').appendChild(c);
+  }
+}
+
+function syncTriage() {
+  for (const b of $('triage').querySelectorAll('button.tg'))
+    b.classList.toggle('on', b.dataset.v === verdict);
+  const labeling = verdict !== 'drop';
+  for (const id of ['card-scen', 'card-intent', 'card-persona'])
+    $(id).style.display = labeling ? '' : 'none';
+  $('card-missing').style.display = verdict === 'insufficient' ? '' : 'none';
+  $('no-label-hint').style.display = verdict === 'drop' ? '' : 'none';
+  $('no-label-hint').textContent = '已判「不需要」——最终剔除，无需打标和改写。';
+  $('btn-draft').disabled = !S || !S.llm_ready || verdict === 'drop';
+}
+
+function curSig() {
+  const ints = [...$('intents').children].filter(x => x.classList.contains('on'))
+                .map(x => x.dataset.id);
+  return `${verdict}|${sel.join(',')}|${ints.join(',')}`;
+}
+
+function updateDraftHint() {
+  const n = noteOf(cur), d = (S.drafts || {})[n.note_id], el = $('drafthint');
+  if (!d || !d.draft) { el.textContent = ''; return; }
+  const stale = d.input_sig && d.input_sig !== curSig();
+  el.textContent = `有 AI 草稿${stale ? '（标签已变，可能过期）' : ''}`;
+  el.style.color = stale ? '#f59e0b' : '#94a3b8';
+}
+
+function renderNote() {
+  const n = noteOf(cur), r = recOf(cur);
+  $('title').textContent = (n.title || '(无标题)') + `  [${n.note_id.slice(0, 10)}]`;
+  $('desc').textContent = n.desc || '(无正文)';
+  renderCmp();
+  draftCache = '';
+  if (r) {
+    sel = [...(r.scenarios || [])];
+    renderIntentChips([...(r.intents || [])]);
+    $('persona').value = (r.persona || []).join('\n');
+    $('missing').value = r.missing_info || '';
+    $('comment').value = r.comment || '';
+    $('rewrite').value = r.rewrite || '';
+    $('ctx').value = r.context || '';
+    verdict = ['keep', 'drop', 'insufficient'].includes(r.final_status) ? r.final_status : 'keep';
+    basedOn = r.based_on || '';
+    draftCache = r.draft || '';
+    $('saved').textContent = `已定稿（${VERDICT_CN[verdict] || verdict}${basedOn ? '·' + basedOn : ''}）`;
+  } else {
+    applySideSilent('s');                       // 建议定稿预填（不置脏）
+    $('comment').value = ''; $('rewrite').value = ''; $('ctx').value = '';
+    $('saved').textContent = '';
+    const d = (S.drafts || {})[n.note_id];      // 批量草稿预填
+    if (d && d.draft) { $('rewrite').value = d.draft; draftCache = d.draft; }
+    if (d && d.context) $('ctx').value = d.context;
+    else if (n.ctx_clean) $('ctx').value = n.ctx_clean;   // 无草稿也给清洗版原文
+  }
+  $('rwlen').textContent = `${($('rewrite').value || '').length} 字`;
+  syncTriage(); renderSel(); updateTree(); updateDraftHint();
+}
+
+function applySideSilent(which) {   // 预填不置脏
+  const old = dirty; applySide(which); dirty = old;
+  $('saved').textContent = '';
+}
+
+function mark() { dirty = true; $('saved').textContent = '未保存'; updateDraftHint(); }
+
+function go(i) {
+  if (i < 0 || i >= S.notes.length) return;
+  if (dirty && cur !== i) save(false);
+  cur = i; dirty = false; renderList(); renderNote();
+  const el = [...$('list').children].find(x => x.classList.contains('cur'));
+  if (el) el.scrollIntoView({ block: 'nearest' });
+}
+
+// ── 场景树（同复核页）────────────────────────────────────────────
+let treeData = [];
+function buildTree() {
+  treeData = [];
+  for (const s of S.scenarios) {
+    const parts = s.path.split(' > ');
+    const l1 = parts[0] || s.id, l2 = parts[1] || '其他', name = parts[parts.length - 1];
+    let g = treeData.find(x => x.l1 === l1);
+    if (!g) { g = { l1, groups: [] }; treeData.push(g); }
+    let g2 = g.groups.find(x => x.l2 === l2);
+    if (!g2) { g2 = { l2, leaves: [] }; g.groups.push(g2); }
+    g2.leaves.push({ ...s, l1, l2, name });
+  }
+  const root = $('tree');
+  root.innerHTML = '';
+  for (const g of treeData) {
+    const l1b = document.createElement('div'); l1b.className = 'l1b'; l1b.dataset.l1 = g.l1;
+    const h = document.createElement('div'); h.className = 'l1h';
+    h.innerHTML = `<span>${g.l1}</span><span class="cnt"></span>`;
+    h.onclick = () => { expanded.l1.has(g.l1) ? expanded.l1.delete(g.l1) : expanded.l1.add(g.l1);
+                        applyFilter(); };
+    l1b.appendChild(h); l1b._h = h;
+    for (const g2 of g.groups) {
+      const l2b = document.createElement('div'); l2b.className = 'l2b';
+      const key = g.l1 + '/' + g2.l2;
+      const h2 = document.createElement('div'); h2.className = 'l2h';
+      h2.textContent = '▸ ' + g2.l2;
+      h2.onclick = () => { expanded.l2.has(key) ? expanded.l2.delete(key) : expanded.l2.add(key);
+                           applyFilter(); };
+      l2b.appendChild(h2); l2b._h = h2;
+      for (const lf of g2.leaves) {
+        const row = document.createElement('label'); row.className = 'leaf';
+        row.dataset.id = lf.id; row.dataset.key = key; row.dataset.l1 = g.l1;
+        row.innerHTML = `<input type="checkbox"><span class="id">${lf.id}</span>` +
+          `<span class="name">${lf.name}</span><span class="def">${lf.definition}</span>`;
+        row.onclick = e => { e.preventDefault(); toggleLeaf(lf.id); };
+        l2b.appendChild(row);
+      }
+      l1b.appendChild(l2b);
+    }
+    root.appendChild(l1b);
+    g._el = l1b;
+  }
+}
+
+function toggleLeaf(id) {
+  const i = sel.indexOf(id);
+  if (i >= 0) sel.splice(i, 1);
+  else {
+    if (sel.length >= S.max_scenarios) return toast(`最多选 ${S.max_scenarios} 个场景`);
+    sel.push(id);
+  }
+  mark(); renderSel(); updateTree();
+}
+
+function renderSel() {
+  $('sel-title').textContent = `最终场景（最多 ${S.max_scenarios} 个）　已选 ${sel.length}/${S.max_scenarios}`;
+  const box = $('sel-chips'); box.innerHTML = '';
+  sel.forEach((sid, idx) => {
+    const s = S.scenarios.find(x => x.id === sid);
+    const c = document.createElement('span');
+    c.className = 'chip sel';
+    c.innerHTML = `${sid} ${s ? s.path : '?'}<b title="移除">×</b>`;
+    c.querySelector('b').onclick = e => { e.stopPropagation(); sel.splice(idx, 1);
+                                          mark(); renderSel(); updateTree(); };
+    box.appendChild(c);
+  });
+}
+
+function updateTree() {
+  const machine = new Set(noteOf(cur).machine.scenarios.map(s => s.id));
+  const selSet = new Set(sel);
+  const cnt = {};
+  for (const row of $('tree').querySelectorAll('.leaf')) {
+    const id = row.dataset.id;
+    row.querySelector('input').checked = selSet.has(id);
+    row.classList.toggle('checked', selSet.has(id));
+    if (selSet.has(id)) cnt[row.dataset.l1] = (cnt[row.dataset.l1] || 0) + 1;
+  }
+  for (const g of treeData)
+    g._el && (g._el._h.querySelector('.cnt').textContent =
+              cnt[g.l1] ? `已选 ${cnt[g.l1]}` : '');
+  for (const row of $('tree').querySelectorAll('.leaf'))
+    if (selSet.has(row.dataset.id) || machine.has(row.dataset.id)) {
+      expanded.l1.add(row.dataset.l1); expanded.l2.add(row.dataset.key);
+    }
+  applyFilter();
+}
+
+function applyFilter() {
+  const q = $('search').value.trim().toLowerCase();
+  const searching = !!q;
+  for (const g of treeData) {
+    const l1b = $('tree').querySelector(`.l1b[data-l1="${CSS.escape(g.l1)}"]`);
+    if (!l1b) continue;
+    if (!g._el) g._el = l1b;
+    let any = false;
+    for (const l2b of l1b.querySelectorAll('.l2b')) {
+      let vis = false;
+      for (const row of l2b.querySelectorAll('.leaf')) {
+        const s = S.scenarios.find(x => x.id === row.dataset.id);
+        const hit = !searching ||
+          (s && (s.path.toLowerCase().includes(q) || s.id.toLowerCase() === q ||
+                 s.definition.toLowerCase().includes(q)));
+        const open = searching || expanded.l2.has(row.dataset.key);
+        row.classList.toggle('hidden', !(hit && open));
+        if (hit) vis = true;
+      }
+      l2b.classList.toggle('closed', searching ? !vis
+                            : !expanded.l2.has(l2b.querySelector('.leaf').dataset.key));
+      if (vis) any = true;
+    }
+    l1b.classList.toggle('closed', !(searching || expanded.l1.has(g.l1)));
+    if (searching && !any) l1b.classList.add('closed');
+  }
+}
+
+function intentIds() {
+  return [...$('intents').children].filter(x => x.classList.contains('on'))
+         .map(x => x.dataset.id);
+}
+
+async function genDraft() {
+  if (!S || !S.llm_ready) return toast('服务未启用 AI 草稿（启动时未配 LLM）');
+  if (verdict === 'drop') return toast('已判不需要，无需改写');
+  const n = noteOf(cur), btn = $('btn-draft');
+  btn.disabled = true; btn.textContent = '生成中…';
+  try {
+    const res = await (await fetch('/api/rewrite/draft', { method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ note_id: n.note_id, final_status: verdict,
+                             scenarios: sel, intents: intentIds() }) })).json();
+    if (!res.ok) return toast('草稿失败: ' + (res.error || ''));
+    (S.drafts || (S.drafts = {}))[n.note_id] =
+      { draft: res.draft, context: res.context || '', input_sig: res.input_sig };
+    draftCache = res.draft;
+    if (!$('rewrite').value.trim() || confirm('改写框已有内容，用 AI 草稿覆盖？')) {
+      $('rewrite').value = res.draft;
+      if (res.context) $('ctx').value = res.context;
+      $('rwlen').textContent = `${res.draft.length} 字`;
+      mark();
+    }
+    updateDraftHint();
+  } finally { btn.disabled = false; btn.textContent = '✨ AI 草稿'; }
+}
+
+async function save(advance) {
+  if (!S || !S.notes.length) return;
+  if (!op) { $('who').focus(); return toast('请先填写操作人名字'); }
+  const n = noteOf(cur);
+  const record = {
+    note_id: n.note_id, final_status: verdict,
+    scenarios: sel,
+    intents: intentIds(),
+    persona: $('persona').value.split('\n').map(x => x.trim()).filter(Boolean),
+    missing_info: $('missing').value.trim(),
+    comment: $('comment').value.trim(),
+    rewrite: $('rewrite').value.trim(),
+    context: $('ctx').value.trim(),
+    draft: draftCache,
+    based_on: basedOn,
+  };
+  if (verdict !== 'drop' && !record.rewrite && advance)
+    toast('提醒：这条还没写改写 query，会进「待改写」清单');
+  const res = await (await fetch('/api/rewrite/save', { method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ operator: op, record }),
+  })).json();
+  if (!res.ok) return toast('保存失败: ' + (res.error || ''));
+  (S.session || (S.session = {}))[n.note_id] = { ...record, operator: op };
+  dirty = false;
+  $('saved').textContent = `已定稿（${VERDICT_CN[verdict] || verdict}）`;
+  const sess = Object.values(S.session);
+  S.counts.done = sess.filter(r => ['keep', 'drop', 'insufficient'].includes(r.final_status)
+    && (r.final_status === 'drop' || (r.rewrite || '').trim())).length;
+  S.counts.rewritten = sess.filter(r => (r.rewrite || '').trim()).length;
+  updateMeta(); renderList();
+  if (advance) go(nextIdx());
+}
+
+function nextIdx() {            // 未改写优先：先补已定稿未改写的，再开新条目
+  let best = -1;
+  for (let i = 0; i < S.notes.length; i++) {
+    const c = classify((cur + 1 + i) % S.notes.length);
+    if (c === 'needrw') { best = (cur + 1 + i) % S.notes.length; break; }
+    if (c === 'todo' && best < 0) best = (cur + 1 + i) % S.notes.length;
+  }
+  if (best >= 0) return best;
+  return Math.min(cur + 1, S.notes.length - 1);
+}
+
+async function boot() {
+  const fs = [['pending', '待改写'], ['agree', '双人一致'], ['single', '仅单人'],
+              ['conflict', '两人分歧'], ['machine', '仅机器'],
+              ['done', '已完成'], ['dropped', '已剔除'], ['all', '全部']];
+  for (const [k, label] of fs) {
+    const b = document.createElement('button');
+    b.textContent = label; b.dataset.k = k;
+    b.onclick = () => { filter = k; renderList(); };
+    $('filters').appendChild(b);
+  }
+  $('who').value = op;
+  $('who').onchange = () => { op = $('who').value.trim();
+    localStorage.setItem('pp_rewriter', op); fetchState(); };
+  $('pickA').onchange = () => fetchState();
+  $('pickB').onchange = () => fetchState();
+  $('q-s').onclick = () => applySide('s');
+  $('q-a').onclick = () => applySide('a');
+  $('q-b').onclick = () => applySide('b');
+  $('q-m').onclick = () => applySide('m');
+  $('triage').onclick = e => {
+    const b = e.target.closest('button.tg');
+    if (!b) return;
+    verdict = b.dataset.v; mark(); syncTriage();
+  };
+  $('btn-draft').onclick = genDraft;
+  $('btn-use-title').onclick = () => { $('rewrite').value = noteOf(cur).title || '';
+                                       $('rwlen').textContent = `${$('rewrite').value.length} 字`; mark(); };
+  $('btn-use-desc').onclick = () => { $('rewrite').value = (noteOf(cur).desc || '')
+                                       .replace(/#[^#]*#?/g, '').trim();
+                                     $('rwlen').textContent = `${$('rewrite').value.length} 字`; mark(); };
+  $('rewrite').oninput = () => { mark(); $('rwlen').textContent = `${$('rewrite').value.length} 字`; };
+  $('ctx').oninput = mark;
+  $('comment').oninput = mark; $('missing').oninput = mark;
+  $('search').oninput = applyFilter;
+  $('btn-expand').onclick = () => { for (const g of treeData) {
+      expanded.l1.add(g.l1); for (const g2 of g.groups) expanded.l2.add(g.l1 + '/' + g2.l2); }
+    applyFilter(); };
+  $('btn-collapse').onclick = () => { expanded.l1.clear(); expanded.l2.clear(); applyFilter(); };
+  $('btn-prev').onclick = () => go(cur - 1);
+  $('btn-save').onclick = () => save(true);
+  $('btn-export').onclick = async () => {
+    if (!S || !S.left) return toast('请先选择两位复核人');
+    if (!op) return toast('请先填写操作人名字');
+    const res = await (await fetch('/api/rewrite/export', { method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ operator: op }) })).json();
+    toast(res.ok ? `已导出：完成 ${res.done}/${res.total}（剔除 ${res.drop}·改写 ${res.rewritten}·待改写 ${res.todo}）`
+           : '导出失败: ' + (res.error || ''));
+  };
+  document.addEventListener('keydown', e => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') { e.preventDefault(); save(true); }
+    const typing = /INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName);
+    if (!typing && e.key === 'ArrowRight') go(cur + 1);
+    if (!typing && e.key === 'ArrowLeft') go(cur - 1);
+  });
+  // 先拉一次拿复核人名单与默认二人组（按复核进度最多）
+  S = await (await fetch('/api/rewrite/state?left=&right=')).json();
+  for (const selp of [$('pickA'), $('pickB')]) {
+    selp.innerHTML = '<option value="">（选择）</option>' +
+      S.reviewers.map(r => `<option value="${r}">${r}</option>`).join('');
+  }
+  const pair = S.default_pair || [];
+  if (pair.length >= 2) { $('pickA').value = pair[0]; $('pickB').value = pair[1]; }
+  await fetchState();
+}
+boot();
+</script>
+</body>
+</html>

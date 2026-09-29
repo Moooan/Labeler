@@ -1,0 +1,27 @@
+[project]
+name = "labeler"
+version = "0.1.0"
+description = "PathPal 标签体系识别：场景/意图/用户画像多模型复标系统"
+requires-python = ">=3.12"
+dependencies = ["requests", "openpyxl", "flask"]
+
+[project.optional-dependencies]
+# 门禁工具链（ruff/mypy/pytest + 类型桩），同事端 pip install -e ".[dev]" 一条装齐
+dev = ["ruff", "mypy", "pytest", "types-requests", "types-openpyxl"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["labeler"]
+
+[tool.setuptools.package-data]
+labeler = ["static/*.html"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
