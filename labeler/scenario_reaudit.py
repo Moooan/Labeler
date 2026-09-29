@@ -16,7 +16,13 @@ from flask import Flask, jsonify, request, send_from_directory
 
 from labeler.llm import make_client
 from labeler.review import load_annotations
-from labeler.review_tool import DEFAULT_NOTES, DEFAULT_RUN, DEFAULT_XLSX, _default_annotations, build_task
+from labeler.review_tool import (
+    DEFAULT_NOTES,
+    DEFAULT_RUN,
+    DEFAULT_XLSX,
+    _default_annotations,
+    build_task,
+)
 from labeler.rewrite import load_drafts
 from labeler.taxonomy import load_taxonomy
 
@@ -47,19 +53,19 @@ def atomic_json(path, value):
 
 def assemble(proposal, original_query):
     if proposal is None:
-        return dict(context="", query="", utterance="", eligible=False,
-                    excluded_reason="缺少8891改写记录", query_source="无")
+        return {"context": "", "query": "", "utterance": "", "eligible": False,
+                    "excluded_reason": "缺少8891改写记录", "query_source": "无"}
     context = "" if proposal.get("context_not_needed") else str(proposal.get("context") or "").strip()
     query = "" if proposal.get("query_not_needed") else str(
-        proposal["query"] if "query" in proposal else original_query or "").strip()
+        proposal.get("query", original_query or "")).strip()
     utterance = "\n\n".join(p for p in (context, query) if p)
     if context == query and context:
         utterance = context
     reason = "整条已标记不需要" if proposal.get("not_needed") else (
         "query和context均为空" if not utterance else "")
-    return dict(context=context, query=query, utterance=utterance, eligible=not reason,
-                excluded_reason=reason,
-                query_source="8891人工保存" if "query" in proposal else "8891显示的原query草稿")
+    return {"context": context, "query": query, "utterance": utterance, "eligible": not reason,
+                "excluded_reason": reason,
+                "query_source": "8891人工保存" if "query" in proposal else "8891显示的原query草稿"}
 
 
 def ref_record(value, source):
@@ -68,9 +74,9 @@ def ref_record(value, source):
     status = value.get("final_status") or value.get("status") or ""
     if status == "done":
         status = "keep"
-    return dict(source=source, status=status, scenarios=list(value.get("scenarios") or []),
-                comment=str(value.get("comment") or ""),
-                time=value.get("updated_at") or value.get("reviewed_at") or value.get("decided_at") or "")
+    return {"source": source, "status": status, "scenarios": list(value.get("scenarios") or []),
+                "comment": str(value.get("comment") or ""),
+                "time": value.get("updated_at") or value.get("reviewed_at") or value.get("decided_at") or ""}
 
 
 def usable(value):
@@ -96,24 +102,24 @@ def pair_kind(a, b):
 def compare(ai, ref):
     if not ai or not usable(ref):
         return None
-    return dict(conflict=not equivalent(ai, ref),
-                added=sorted(set(ai["scenarios"]) - set(ref["scenarios"])),
-                removed=sorted(set(ref["scenarios"]) - set(ai["scenarios"])),
-                status_changed=ai["status"] != ref["status"])
+    return {"conflict": not equivalent(ai, ref),
+                "added": sorted(set(ai["scenarios"]) - set(ref["scenarios"])),
+                "removed": sorted(set(ref["scenarios"]) - set(ai["scenarios"])),
+                "status_changed": ai["status"] != ref["status"]}
 
 
 def recommendation(ai, a, b):
     if not ai:
-        return dict(kind="pending", text="等待AI复审")
+        return {"kind": "pending", "text": "等待AI复审"}
     refs = [r for r in (a, b) if usable(r)]
     matches = [r["source"] for r in refs if equivalent(ai, r)]
     if len(refs) == 2 and len(matches) == 2:
-        return dict(kind="consistent", text="AI与两位人工一致，建议保留原结论")
+        return {"kind": "consistent", "text": "AI与两位人工一致，建议保留原结论"}
     if matches:
-        return dict(kind="review", text="AI支持" + "、".join(matches) + "，建议复核另一方差异后定稿")
+        return {"kind": "review", "text": "AI支持" + "、".join(matches) + "，建议复核另一方差异后定稿"}
     if refs:
-        return dict(kind="review", text="AI与原人工结论冲突，请检查改写是否改变场景后定稿")
-    return dict(kind="review", text="缺少已完成的人工参考，需人工核对AI建议")
+        return {"kind": "review", "text": "AI与原人工结论冲突，请检查改写是否改变场景后定稿"}
+    return {"kind": "review", "text": "缺少已完成的人工参考，需人工核对AI建议"}
 
 
 def make_snapshot(directory):
@@ -143,9 +149,9 @@ def make_snapshot(directory):
                          references=references, source_flags=flags,
                          source_updated_at=(proposal or {}).get("updated_at", ""),
                          input_sig=hashlib.sha256(assembled["utterance"].encode()).hexdigest()))
-    snapshot = dict(created_at=now(), run=DEFAULT_RUN, model="glm-5.3-flash",
-                    sources=list(sources), default_pair=ranked[:2],
-                    taxonomy=[asdict(s) for s in tax.scenarios], rows=rows)
+    snapshot = {"created_at": now(), "run": DEFAULT_RUN, "model": "glm-5.3-flash",
+                    "sources": list(sources), "default_pair": ranked[:2],
+                    "taxonomy": [asdict(s) for s in tax.scenarios], "rows": rows}
     atomic_json(directory / "snapshot.json", snapshot)
     return snapshot
 
@@ -167,7 +173,7 @@ def parse_ai(raw, allowed):
         ids = []
     if not isinstance(value.get("reason"), str) or not value["reason"].strip():
         raise ValueError("缺少审核依据")
-    return dict(status=value["status"], scenarios=ids, reason=value["reason"])
+    return {"status": value["status"], "scenarios": ids, "reason": value["reason"]}
 
 
 def title_from_query(query, utterance=""):
@@ -254,21 +260,21 @@ class Reaudit:
                     result.update(ok=True, input_sig=row["input_sig"], model=self.snapshot["model"],
                                   attempts=attempt, updated_at=now())
                     break
-                except Exception as exc:
-                    result = dict(ok=False, error=f"{type(exc).__name__}：生成或校验失败，可重试",
-                                  attempts=attempt, updated_at=now())
+                except Exception as exc:  # noqa: BLE001 生成/校验失败按次重试，兜底不中断批次
+                    result = {"ok": False, "error": f"{type(exc).__name__}：生成或校验失败，可重试",
+                                  "attempts": attempt, "updated_at": now()}
             if not result.get("ok"):
                 defaults = self.snapshot.get("default_pair", [])
                 refs = [row.get("references", {}).get(name) for name in defaults[:2]]
                 if len(refs) == 2 and all(usable(ref) for ref in refs) and equivalent(refs[0], refs[1]):
                     original_error = result.get("error", "生成失败")
-                    result = dict(ok=True, title=title_from_query(row.get("query"), row.get("utterance")),
-                                  title_fallback=True, classification_fallback="human_consensus",
-                                  status=refs[0]["status"], scenarios=[] if refs[0]["status"] == "drop"
+                    result = {"ok": True, "title": title_from_query(row.get("query"), row.get("utterance")),
+                                  "title_fallback": True, "classification_fallback": "human_consensus",
+                                  "status": refs[0]["status"], "scenarios": [] if refs[0]["status"] == "drop"
                                   else list(refs[0]["scenarios"]),
-                                  reason="AI连续生成失败；两位人工原结论完全一致，临时采用人工一致结论。",
-                                  generation_error=original_error, attempts=2,
-                                  input_sig=row["input_sig"], model=self.snapshot["model"], updated_at=now())
+                                  "reason": "AI连续生成失败；两位人工原结论完全一致，临时采用人工一致结论。",
+                                  "generation_error": original_error, "attempts": 2,
+                                  "input_sig": row["input_sig"], "model": self.snapshot["model"], "updated_at": now()}
                 else:
                     result.update(title=title_from_query(row.get("query"), row.get("utterance")),
                                   title_fallback=True)
@@ -345,10 +351,10 @@ class Reaudit:
             a, b = row.get("references", {}).get(left), row.get("references", {}).get(right)
             if not (usable(a) and usable(b) and equivalent(a, b) and equivalent(ai, a)):
                 return False
-            final = dict(status=ai["status"], scenarios=list(ai["scenarios"]),
-                         reason="自动确认：context保留，且两位人工结论与AI独立复审完全一致。",
-                         operator="系统自动确认", revision=1, updated_at=now(),
-                         conflict_mark=False, left=left, right=right, automatic=True)
+            final = {"status": ai["status"], "scenarios": list(ai["scenarios"]),
+                         "reason": "自动确认：context保留，且两位人工结论与AI独立复审完全一致。",
+                         "operator": "系统自动确认", "revision": 1, "updated_at": now(),
+                         "conflict_mark": False, "left": left, "right": right, "automatic": True}
             atomic_json(self.directory / "decisions" / f"{nid}.json", final)
             return True
 
@@ -374,8 +380,8 @@ class Reaudit:
         if not operator:
             return jsonify(error="请填写复审人姓名"), 400
         try:
-            final = parse_ai(json.dumps(dict(status=data.get("status"), scenarios=data.get("scenarios"),
-                                            reason=str(data.get("reason") or "人工确认"))), self.allowed)
+            final = parse_ai(json.dumps({"status": data.get("status"), "scenarios": data.get("scenarios"),
+                                            "reason": str(data.get("reason") or "人工确认")}), self.allowed)
         except ValueError:
             return jsonify(error="请选择有效分诊与最多5个场景；保留至少需要一个场景"), 400
         with self.lock:

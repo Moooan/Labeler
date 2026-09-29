@@ -14,8 +14,14 @@ from flask import Flask, jsonify, request, send_from_directory
 
 from labeler.llm import make_client
 from labeler.review import load_annotations
-from labeler.review_tool import DEFAULT_NOTES, DEFAULT_RUN, _default_annotations, build_task
-from labeler.review_tool import DEFAULT_XLSX, machine_scen_ids
+from labeler.review_tool import (
+    DEFAULT_NOTES,
+    DEFAULT_RUN,
+    DEFAULT_XLSX,
+    _default_annotations,
+    build_task,
+    machine_scen_ids,
+)
 from labeler.rewrite import clean_context, load_drafts
 from labeler.taxonomy import load_taxonomy
 
@@ -70,7 +76,7 @@ def parse_proposal(raw):
         text = text.split("\n", 1)[1].rsplit("```", 1)[0].strip()
     value = json.loads(text)
     if not isinstance(value, dict) or not isinstance(value.get("context"), str):
-        raise ValueError("模型没有返回有效 context")
+        raise TypeError("模型没有返回有效 context")
     if not value["context"].strip():
         raise ValueError("模型返回了空 context")
     changes = value.get("changes", [])
@@ -171,7 +177,7 @@ class Preview:
                         existing["revision"] = revision
                         proposal = existing
                     self.write(nid, proposal)
-        except Exception as exc:
+        except Exception as exc:  # noqa: BLE001 批量worker兜底，任何失败记为可重试
             with self.lock:
                 self.errors[nid] = f"生成失败（{type(exc).__name__}），可重试"
         finally:
@@ -297,7 +303,7 @@ class Preview:
                 raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
             parsed = json.loads(raw)
             query = str(parsed.get("query") or "").strip()
-        except Exception:
+        except Exception:  # noqa: BLE001 Web边界兜底，统一转502不炸500
             return jsonify(error="query 生成失败，请稍后重试"), 502
         with self.lock:
             latest = self.read(nid)
@@ -401,7 +407,7 @@ class Preview:
                 raise ValueError("模型返回了标签体系外路径")
             reason = str(parsed.get("reason") or "").strip()
             needs_review = bool(parsed.get("needs_review", False))
-        except Exception:
+        except Exception:  # noqa: BLE001 Web边界兜底，统一转502不炸500
             return jsonify(error="知识库路径判断失败，请稍后重试"), 502
         with self.lock:
             latest = self.read(nid)

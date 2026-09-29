@@ -8,13 +8,13 @@ from labeler.notes import Note
 def test_preview_save_isolated_and_conflict_protected(tmp_path):
     note = Note('n1', '求助', '大家帮帮我', (), {})
     p = Preview([(note, {})], tmp_path / 'preview', workers=1)
-    p.write('n1', dict(context='请你帮帮我', approved=False, revision=1))
+    p.write('n1', {'context': '请你帮帮我', 'approved': False, 'revision': 1})
     client = p.app.test_client()
-    assert client.post('/api/save', json=dict(note_id='n1', context='新内容', revision=0)).status_code == 409
-    assert client.post('/api/save', json=dict(note_id='n1', context='新内容', revision=1, approved=True)).status_code == 200
+    assert client.post('/api/save', json={'note_id': 'n1', 'context': '新内容', 'revision': 0}).status_code == 409
+    assert client.post('/api/save', json={'note_id': 'n1', 'context': '新内容', 'revision': 1, 'approved': True}).status_code == 200
     assert p.read('n1')['context'] == '新内容'
     assert client.get('/api/export').json['records'][0]['approved'] is True
-    assert client.post('/api/save', json=dict(note_id='../bad', context='x')).status_code == 400
+    assert client.post('/api/save', json={'note_id': '../bad', 'context': 'x'}).status_code == 400
     assert list(tmp_path.iterdir()) == [tmp_path / 'preview']
 
 
@@ -35,7 +35,7 @@ def test_not_needed_can_be_set_before_generation_and_exported(tmp_path):
 
 def test_parser_preserves_long_original_style():
     context = '我真的不知道怎么办，想了很久还是很纠结。' * 200
-    result = parse_proposal(json.dumps(dict(context=context, changes=['调整称呼'], needs_review=False)))
+    result = parse_proposal(json.dumps({'context': context, 'changes': ['调整称呼'], 'needs_review': False}))
     assert result['context'] == context
 
 
@@ -50,7 +50,7 @@ def test_context_hashtags_are_removed_everywhere():
 def test_context_can_be_empty_and_marked_not_needed(tmp_path):
     note = Note('n1', '直接问题', '怎么做？', (), {})
     p = Preview([(note, {})], tmp_path / 'preview', workers=1)
-    p.write('n1', dict(context='背景', approved=False, revision=1))
+    p.write('n1', {'context': '背景', 'approved': False, 'revision': 1})
     client = p.app.test_client()
     assert client.post('/api/context-not-needed', json={
         'note_id': 'n1', 'revision': 1, 'context_not_needed': True}).status_code == 200
