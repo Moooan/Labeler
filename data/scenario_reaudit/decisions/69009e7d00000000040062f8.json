@@ -1,0 +1,17 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S104",
+    "S234",
+    "S205"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:30:32.974666+00:00",
+  "conflict_mark": false,
+  "utterance": "本人去年刚毕业，22岁太迷茫了职业规划这条道路上，想听一下你对22岁的建议，请你介绍一下这方面的经验。\n\n22岁刚毕业，对职业规划感到很迷茫，我该怎么规划未来的方向？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

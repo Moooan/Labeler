@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068"
+  ],
+  "reason": "用户是研一学生，询问挂科的影响，直接对应在校学业异常中的挂科及其后果；未提及补考、重修等具体环节，不额外扩展。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:02:15.547969+00:00",
+  "conflict_mark": false,
+  "utterance": "果壳研一挂科有什么后果😭😭😭😭😭😭😭😭😭😭😭",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

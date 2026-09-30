@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S198"
+  ],
+  "reason": "发言自述不到截止不动手、坐下后走神分心，末尾明确求助改善执行力，对应拖延与分心两个场景；未涉及其它领域求助。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:23:03.091830+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S031",
+    "S032",
+    "S036",
+    "S204",
+    "S205"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T03:29:43.082374+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

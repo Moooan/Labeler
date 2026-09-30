@@ -1,0 +1,17 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S105",
+    "S204",
+    "S206"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:31:41.603189+00:00",
+  "conflict_mark": false,
+  "utterance": "存一些作家笔下的江苏文学。这个星期的压力大到整个人有点承受不住了，这就是暗黑研三吗🥀。快点毕业，工作在哪，求offer。\n\n研三毕业和找工作的压力大到快承受不住了，我该怎么调整心态熬过去？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

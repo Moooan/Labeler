@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S058"
+  ],
+  "reason": "用户求助大学课程期末的应用文计划写作任务，核心是如何把目标写得具体、量化、可落地以获得高分，属于课程作业的理解与完成；文本未体现升学、求职等其他场景。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:08:34.690436+00:00",
+  "conflict_mark": false,
+  "utterance": "大学生期末应用文计划写作，怎么把目标写得具体量化、可落地来拿高分？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

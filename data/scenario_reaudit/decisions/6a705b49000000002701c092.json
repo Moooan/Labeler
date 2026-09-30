@@ -1,0 +1,17 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S094",
+    "S096",
+    "S098"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:17:47.069488+00:00",
+  "conflict_mark": false,
+  "utterance": "准大一新生该如何规划大学四年，兼顾绩点、社团、竞赛和升学就业？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

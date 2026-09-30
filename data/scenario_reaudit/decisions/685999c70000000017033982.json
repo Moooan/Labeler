@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S123"
+  ],
+  "reason": "实际求助是评估法学生假期短期实习是否值得及如何规划更有意义，属于实习方向与机会规划问题，未见多个offer比较或实习期间适应等情形，故归S123。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:19:52.977881+00:00",
+  "conflict_mark": false,
+  "utterance": "今天和法学院的老师讨论学生实习的事。我说你们别让学生放假到律所法院实习一两个月了\n\n法学生假期到律所或法院实习一两个月到底值不值得，该怎么规划实习更有意义？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

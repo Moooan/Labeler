@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S211",
+    "S213"
+  ],
+  "reason": "发言明确求助舍友关系处理，匹配S211；同时明确表达孤独感，匹配S213。文本无学业、升学或就业等其他背景，不足以外推其他场景。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:25:24.897664+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

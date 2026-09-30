@@ -1,0 +1,13 @@
+{
+  "status": "scenario_insufficient",
+  "scenarios": [],
+  "reason": "context已移除，仅凭“献血后怎么会这样？”无法判断“这样”指什么（身体不适、情绪、其他事件均有可能），且献血后反应属健康咨询，与现有标签体系无贴切对应，信息不足无法归类",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:41:52.062500+00:00",
+  "conflict_mark": false,
+  "utterance": "献血后怎么会这样？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

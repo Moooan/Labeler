@@ -1,0 +1,17 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068",
+    "S132",
+    "S136"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:29:23.378115+00:00",
+  "conflict_mark": false,
+  "utterance": "非全硕士怎么办？考公还是工作？挂科对考公有影响吗\n\n大学期间挂过科，会影响报考公务员的资格吗？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

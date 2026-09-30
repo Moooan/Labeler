@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S212"
+  ],
+  "reason": "发言核心是恋爱关系中的聊天沟通与相处姿态问题，属于亲密关系场景；标签体系中无更贴切的沟通类或情绪类标签可依据。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:25:00.335693+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

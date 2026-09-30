@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S104"
+  ],
+  "reason": "实际求助目标是如何写一份新教师入职所需的三年职业发展规划，其内容实质是中长期职业路径与能力规划，匹配S104；文本无其他充分依据支撑入职适应等标签。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:29:43.163248+00:00",
+  "conflict_mark": false,
+  "utterance": "新教师入职要交3000字的三年职业发展规划，该怎么写？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

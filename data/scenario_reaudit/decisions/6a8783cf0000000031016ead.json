@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S234"
+  ],
+  "reason": "用户询问人生未来三个十年如何规划，属于无具体候选方向的人生路径总体设计，正是S234定义中明确包含的\"人生路径总体设计\"；发言未表达情绪困扰，也未指向已有方向的中长期职业规划，故不选S104或S205。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:32:35.734700+00:00",
+  "conflict_mark": false,
+  "utterance": "怎样规划我的三个十年\n\n人生未来三个十年该怎么规划？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

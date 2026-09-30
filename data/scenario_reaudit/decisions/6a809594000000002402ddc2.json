@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S058",
+    "S104"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:31:02.638181+00:00",
+  "conflict_mark": false,
+  "utterance": "大学生职业生涯规划书作业该怎么写？有完整的范文或模板可以参考吗？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

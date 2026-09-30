@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 Set-Location -LiteralPath $PSScriptRoot
 $env:PYTHONIOENCODING = 'utf-8'
-if (Get-NetTCPConnection -LocalPort 8892 -State Listen -ErrorAction SilentlyContinue) {
+if (Get-NetTCPConnection -LocalAddress 127.0.0.1 -LocalPort 8892 -State Listen -ErrorAction SilentlyContinue) {
     Write-Output 'Port 8892 is already running.'
     exit 0
 }

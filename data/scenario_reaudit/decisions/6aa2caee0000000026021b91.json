@@ -1,0 +1,13 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "求助目标是寻找PPT代做服务的推荐与筛选，属于校外付费代做需求，不属于给定标签体系内任何场景，也非作业本身的理解与完成，故判为域外drop。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:42:39.907447+00:00",
+  "conflict_mark": false,
+  "utterance": "PPT自己做不完了，怎么找到做完再付款的靠谱代做？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

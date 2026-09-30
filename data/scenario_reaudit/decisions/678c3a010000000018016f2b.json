@@ -1,0 +1,13 @@
+{
+  "status": "scenario_insufficient",
+  "scenarios": [],
+  "reason": "context已移除，发言中“这个”的指代对象缺失，无法判断表格内容对应的人生规划场景；仅凭剩余文本只能看出格式整理类请求，信息不足以归类。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:39:10.754553+00:00",
+  "conflict_mark": false,
+  "utterance": "请你帮我把这个做成excel 表格。",
+  "utterance_modified": true,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

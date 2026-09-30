@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S096",
+    "S104"
+  ],
+  "reason": "参考 改写台 · zlx 结论",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:20:09.891250+00:00",
+  "conflict_mark": false,
+  "utterance": "职业规划大赛就业赛道该怎么备赛，如何做好职业定位和能力匹配以冲刺省奖？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

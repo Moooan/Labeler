@@ -1,0 +1,18 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S021",
+    "S194",
+    "S198",
+    "S199"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:31:20.543307+00:00",
+  "conflict_mark": false,
+  "utterance": "考研备考每天拖延，浑浑噩噩，一学就想玩手机我还有救吗？\n\n考研备考每天拖延、一学习就想玩手机，我该怎么克服分心、专注备考？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

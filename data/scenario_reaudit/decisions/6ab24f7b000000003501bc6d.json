@@ -1,0 +1,18 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S098",
+    "S104",
+    "S234",
+    "S205"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:06:16.878299+00:00",
+  "conflict_mark": false,
+  "query": "大学生涯规划老师的建议真的有价值吗？迷茫的我该怎么自己探索职业方向？",
+  "query_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

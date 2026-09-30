@@ -1,0 +1,19 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S197",
+    "S202",
+    "S204",
+    "S208",
+    "S215"
+  ],
+  "reason": "发言明确求助如何靠自律坚持改变，直接匹配S197；负债50万对应S215，焦虑内耗对应S204，失眠对应S202，投资失败后寻求恢复对应S208；各标签均有文本依据。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:31:41.105619+00:00",
+  "conflict_mark": false,
+  "utterance": "28岁投资失败负债50万，焦虑失眠陷入内耗，我该怎么靠自律坚持改变、重启人生？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S098",
+    "S197",
+    "S200"
+  ],
+  "reason": "参考 改写台 · zlx 结论",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:08:24.451883+00:00",
+  "conflict_mark": false,
+  "utterance": "大三学生想制定每日学习计划表并长期坚持自律执行，该怎么安排和落实？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

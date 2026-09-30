@@ -1,0 +1,11 @@
+{
+  "context": "请你在线解答电脑问题。我遇到的问题会描述得越详细越好，抓住每一个细节发图片，尽量拍得清晰点，发视频也可以，你看到都会回我。",
+  "changes": [],
+  "needs_review": true,
+  "note_id": "6a6ff014000000002402c5c1",
+  "source_sig": "70734769c1814694977d8f17c93075f49f8ddc6ee26fd9d795c94fffb6d473b2",
+  "version": "ai-context-v1",
+  "approved": false,
+  "revision": 1,
+  "updated_at": "2026-09-29T07:19:10.126834+00:00"
+}

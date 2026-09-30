@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S098"
+  ],
+  "reason": "发言核心是大学四年整体规划，明确列出绩点、英语、竞赛、实习、证书等维度，与S098在校阶段规划的定义直接匹配；各具体项仅是规划内容维度，未展开独立求助，不单独拆分标签。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:36:13.387555+00:00",
+  "conflict_mark": false,
+  "utterance": "大学四年该怎么规划，才能在绩点、英语、竞赛、实习、证书上打好基础？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

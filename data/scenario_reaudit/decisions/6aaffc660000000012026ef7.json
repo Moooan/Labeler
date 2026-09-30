@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S080"
+  ],
+  "reason": "实际求助目标是课程作业问卷数据的样本收集方法，属于在校学业的问卷/样本收集场景；开头游戏行业话语只是问卷受众描述，未构成其他求助目标。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:28:34.508250+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S110"
+  ],
+  "reason": "实际求助目标是如何回答面试中关于职业规划和优点的提问，属于求职单面应答；\"迷茫\"仅为背景情绪，未提出方向探索或长期规划的独立诉求，不足以支撑其他标签。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:27:12.000652+00:00",
+  "conflict_mark": false,
+  "utterance": "面试被问职业规划和自身优点，我没什么规划也觉得自己没什么优点，很迷茫，该怎么回答？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

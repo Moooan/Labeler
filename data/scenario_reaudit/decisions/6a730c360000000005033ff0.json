@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S200"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:32:09.358173+00:00",
+  "conflict_mark": false,
+  "utterance": "我该怎么用codex做自己人生管理系统。\n\n我该怎么用 codex 搭建自己的人生管理系统，具体指令怎么写？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

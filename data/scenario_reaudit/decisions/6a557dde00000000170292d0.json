@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S234",
+    "S204"
+  ],
+  "reason": "query自足可判：诉求为在主线不清晰时进行人生路径总体设计与涵盖健康、事业的长期规划，并明确希望减少焦虑和精神内耗，分别对应S234与S204；未提及具体升学、求职或躯体健康问题，故不选其他标签。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:29:23.984004+00:00",
+  "conflict_mark": false,
+  "utterance": "该怎么梳理人生主线、做好健康事业等长期规划，减少焦虑和精神内耗？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

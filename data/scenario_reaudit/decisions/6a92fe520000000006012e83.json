@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068",
+    "S070"
+  ],
+  "reason": "用户上学期挂科一门必修课，核心求助是重修成绩能否掩盖挂科记录及后续怎么办，属于挂科影响与重修成绩和影响两类场景；无补考、清考等其他依据。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:25:32.485972+00:00",
+  "conflict_mark": false,
+  "utterance": "山大信院的重修成绩能掩盖挂科记录吗？上学期挂了一科必修课，重修的成绩能掩盖挂科记录吗？我该怎么办？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

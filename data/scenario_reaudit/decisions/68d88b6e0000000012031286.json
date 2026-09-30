@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S104",
+    "S123"
+  ],
+  "reason": "用户明确求助两点：金融方向如何找实习（对应实习寻找），以及做好职业规划（对应职业长期规划），文本依据充分；未涉及具体申请环节或方向探索。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:26:58.499681+00:00",
+  "conflict_mark": false,
+  "utterance": "top3本硕，竟然一点实习都没有。。。。\n\ntop3本硕金融方向，没有任何实习经历，我该怎么找实习、做好职业规划？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

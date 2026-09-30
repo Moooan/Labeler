@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S213"
+  ],
+  "reason": "实际诉求是如何向朋友表达放弃毕业后同城的约定并处理关系压力，属于朋友间的沟通困难（S213），并非城市选择或求职决策问题，故不选S102。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T03:04:46.320807+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

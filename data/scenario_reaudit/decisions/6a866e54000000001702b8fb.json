@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S104"
+  ],
+  "reason": "用户已有明确行业方向（金融），核心诉求是评估gap三年这一职业空档对中长期发展的影响，属于职业长期规划范畴；无信息显示其在探索方向、待业无offer或情绪困扰，故不选S234/S130/S205",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:19:35.436604+00:00",
+  "conflict_mark": false,
+  "utterance": "金融行业职业规划中 gap 三年可以吗？会不会影响之后的发展？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

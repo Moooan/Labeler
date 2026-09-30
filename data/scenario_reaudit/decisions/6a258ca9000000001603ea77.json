@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S195"
+  ],
+  "reason": "发言核心是只有deadline才能行动、截止前赶工，明确求助如何培养内驱力与行动力，属于执行力-拖延（截止前赶工），并兼有缺乏deadline时无法启动的启动困难表现，无其他领域依据。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:32:47.423158+00:00",
+  "conflict_mark": false,
+  "utterance": "没有ddl就没行动的原因找到了！\n最近在补材料，\n下周检查，\n每天赶工到深夜，\n发现效率前所未有得高。\n一直思考原因，\n发现正是因为缺乏内驱力，\n所以所有的行为就必须要靠ddl来驱动。\n\n缺乏内驱力，只有靠deadline才能行动起来，该怎么培养内驱力、提高行动力？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

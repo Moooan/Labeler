@@ -1,0 +1,17 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S018",
+    "S021",
+    "S023"
+  ],
+  "reason": "发言包含考研目标院校（中央司法警官学院法硕）是否值得选择的定位比较，以及考研整体规划和专业课复习三项求助，均属考研域；未涉及高考志愿或其他阶段。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:11:47.433002+00:00",
+  "conflict_mark": false,
+  "utterance": "法硕报考中央司法警官学院值得选吗，专业课备考和考研规划该怎么做？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

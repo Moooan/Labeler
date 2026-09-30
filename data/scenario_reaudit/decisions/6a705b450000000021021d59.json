@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S017",
+    "S132"
+  ],
+  "reason": "用户已在考公与读研间摇摆，核心诉求是比较直接考公与先读研再考公两条路径，属考研与考公路径比较，情绪成分次要。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:40:12.618038+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S058",
+    "S060"
+  ],
+  "reason": "补充信息后可",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:42:53.988185+00:00",
+  "conflict_mark": false,
+  "utterance": "大学生作业，请你帮我做！！！求求求！数智大数据技术应用与开发，好难操作，虽然有教程，但是本人电脑小白，真不会做啊啊啊……",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

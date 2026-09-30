@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068"
+  ],
+  "reason": "大一新生询问摆烂程度与挂科的关系，核心是对挂科条件及其影响的了解，归属在校学业-学业异常-挂科场景。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:45:21.613480+00:00",
+  "conflict_mark": false,
+  "utterance": "大一新生真诚发问，大学生有多摆才会挂科？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S195",
+    "S218"
+  ],
+  "reason": "发言明确求助如何让自己行动起来，核心是知道要做但等状态无法开始，对应启动困难；ADHD是明确提及的成因背景，对应ADHD相关；一直拖延为所述结果，对应拖延标签。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T03:37:48.630142+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

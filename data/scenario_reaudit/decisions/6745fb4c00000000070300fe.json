@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S217"
+  ],
+  "reason": "发言核心求助是拖延已影响学业且明知后果仍无法自控时是否应就医，对应心理健康的是否需要就医判断；拖延本身是主要困扰，故同时匹配拖延场景。未提及ADHD等内容，不做额外推断。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:36:45.028249+00:00",
+  "conflict_mark": false,
+  "utterance": "拖延严重到影响学业，明知后果也控制不住，我需要去看医生吗？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

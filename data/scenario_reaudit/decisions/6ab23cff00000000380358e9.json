@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S216"
+  ],
+  "reason": "发言核心是失业后缺乏收入、基本吃饭生计无着，与S216失业生计定义完全吻合；未提及求职流程、债务或其他线索，不强行归类。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T03:28:50.056067+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

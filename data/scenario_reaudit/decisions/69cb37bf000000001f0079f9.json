@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068",
+    "S204"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:07:11.093078+00:00",
+  "conflict_mark": false,
+  "utterance": "请你告诉我向哪里走吧。研究生挂科怎么办啊，挂科会有什么后果吗？学一个月，考的超难，真的是太讨厌了\n\n研究生挂科了会有什么后果，该怎么办？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S018",
+    "S028",
+    "S104",
+    "S117",
+    "S194"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:37:09.808331+00:00",
+  "conflict_mark": false,
+  "utterance": "读研院校二选一！陕师大还是北语\n低精力+拖延症\n怎么在大厂混啊\n\n以后想进互联网大厂，读研在陕师大和北语之间怎么选？我低精力拖延症，哪个更适合？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

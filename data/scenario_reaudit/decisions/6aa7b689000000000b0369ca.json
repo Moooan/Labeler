@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S082"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:00:26.156850+00:00",
+  "conflict_mark": false,
+  "utterance": "我看大家硕论动不动就是1.2W、1.6W的，请你帮我分析下跟我差不多的情况，一般都能顺利完成吗，后面不会让我加钱吧",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

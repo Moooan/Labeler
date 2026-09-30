@@ -1,0 +1,18 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S100",
+    "S101",
+    "S104",
+    "S117"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:22:39.923380+00:00",
+  "conflict_mark": false,
+  "utterance": "泛文商科学生该如何在咨询、互联网产品/战略商分、金融投行中选择方向并规划长期职业路径？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

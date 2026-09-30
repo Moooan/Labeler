@@ -1,0 +1,17 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S096",
+    "S098",
+    "S238"
+  ],
+  "reason": "发言核心是大学四年整体规划（S098）；四六级属于在校通用证书考试的报考与备考安排（S238）；大英赛为学科竞赛，询问其时间安排对应竞赛备赛（S096）。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:09:58.804820+00:00",
+  "conflict_mark": false,
+  "utterance": "大学四年该怎么规划，四六级和大英赛要怎么安排？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

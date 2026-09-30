@@ -78,6 +78,8 @@ def test_isolated_generation_and_versioned_final(tmp_path, monkeypatch):
         assert len(client.get('/api/export').get_json()['rows']) == 1
         body = {'note_id': 'n1', 'operator': '测试人', 'status': 'keep', 'scenarios': ['S1'], 'revision': 0}
         assert client.post('/api/final', json=body).status_code == 200
+        assert audit.decision('n1')['utterance'] == row['utterance']
+        assert audit.decision('n1')['utterance_modified'] is False
         assert client.post('/api/final', json=body).status_code == 409
         body['revision'] = 1
         assert client.post('/api/final', json=body).status_code == 200
@@ -89,6 +91,13 @@ def test_isolated_generation_and_versioned_final(tmp_path, monkeypatch):
         assert client.post('/api/final', json=body).status_code == 200
         assert client.get('/api/state').get_json()['rows'][0]['final']['status'] == 'drop'
         assert client.get('/api/export').get_json()['rows'][0]['final']['status'] == 'drop'
+        body.update(revision=3, status='scenario_insufficient', scenarios=[], reason='现有三级场景无法覆盖',
+                    utterance='修改后的拼接内容')
+        assert client.post('/api/final', json=body).status_code == 200
+        assert audit.decision('n1')['status'] == 'scenario_insufficient'
+        assert audit.decision('n1')['scenarios'] == []
+        assert audit.decision('n1')['utterance'] == '修改后的拼接内容'
+        assert audit.decision('n1')['utterance_modified'] is True
     finally:
         audit.pool.shutdown(wait=True)
 

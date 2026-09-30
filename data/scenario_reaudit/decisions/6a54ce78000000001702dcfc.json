@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S212",
+    "S218"
+  ],
+  "reason": "发言明确为ADHD确诊后的现实困扰，核心求助是如何面对伴侣可能的排斥，同时涉及亲密关系接纳，故归ADHD相关与亲密关系两场景。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:22:42.501127+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

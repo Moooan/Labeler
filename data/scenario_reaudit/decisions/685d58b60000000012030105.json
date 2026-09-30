@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S195",
+    "S196"
+  ],
+  "reason": "发言明确提到拖延、迟迟无法开始行动、目标拆解为行动计划，分别对应拖延、启动困难和任务拆解三个场景；未提及其他领域信息，无domain外内容。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:22:00.109029+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

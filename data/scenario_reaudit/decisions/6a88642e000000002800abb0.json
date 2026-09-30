@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S204",
+    "S205"
+  ],
+  "reason": "发言仅呈现焦虑、迷茫、内耗的情绪困扰及'调整状态走出来'的求助；context已移除，无法推断是否关联具体学业或职业事件，故仅保留情绪类S204（焦虑含内耗）与S205（迷茫缺乏方向）。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:30:27.230950+00:00",
+  "conflict_mark": false,
+  "utterance": "中九本硕陷入低谷，焦虑迷茫又内耗严重，我该怎么调整状态走出来？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

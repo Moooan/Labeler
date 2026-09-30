@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S213"
+  ],
+  "reason": "发言核心是害怕麻烦别人、不好意思开口求助和接受帮助，属于人际社交中的求助困难，匹配S213孤独/社交；焦虑、自我否定等标签缺乏足够文本依据。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:10:20.450331+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

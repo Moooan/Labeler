@@ -1,0 +1,18 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S098",
+    "S101",
+    "S104",
+    "S234"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:05:37.939475+00:00",
+  "conflict_mark": false,
+  "query": "人力资源管理专业大一学生，本专业有哪些职业发展路径和就业方向，大学阶段该怎么规划？",
+  "query_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

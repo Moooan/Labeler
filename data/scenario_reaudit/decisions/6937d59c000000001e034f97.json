@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S104"
+  ],
+  "reason": "用户明确寻求未来15年中长期职业布局与发展规划，属于职业长期规划场景，无升学、求职等具体环节诉求",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:47:39.470880+00:00",
+  "conflict_mark": false,
+  "utterance": "普通女生如何布局事业黄金15年？\n\n普通女生该如何布局规划自己事业黄金15年的职业发展？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

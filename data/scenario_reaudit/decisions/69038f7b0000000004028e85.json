@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S098"
+  ],
+  "reason": "发言实际求助目标是文科博士寻求学业规划以完成博士阶段整体学业规划，对应在校阶段规划场景；未提及具体规划细节，但不影响归类。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:10:18.492808+00:00",
+  "conflict_mark": false,
+  "utterance": "文科博士最好的夏天。学业规划师哪个比较靠谱？\n\n文科博士想找学业规划师做学业规划，哪个比较靠谱？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

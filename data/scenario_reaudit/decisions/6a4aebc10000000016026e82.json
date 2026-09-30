@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068"
+  ],
+  "reason": "用户实际求助目标是了解挂科带来的后果及对未来影响，与S068'挂科：课程未通过及其影响'直接对应；'好烦'仅为简短情绪表达，无充分依据支撑情绪类标签。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:44:44.738510+00:00",
+  "conflict_mark": false,
+  "utterance": "大学生挂科了会有什么后果？好烦。\n\n大学挂科会有哪些后果，对未来有什么影响？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S197"
+  ],
+  "reason": "用户自述总是拖延并求助提高执行力和自律，明确对应拖延（S194）与自律坚持（S197）；发言无具体学业或职业情境，MBTI仅为自我描述背景",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:46:37.587476+00:00",
+  "conflict_mark": false,
+  "utterance": "为什么INTP都爱拖延？行动力比什么都重要。\n\n我是INTP，总是拖延，该怎么提高执行力和自律？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

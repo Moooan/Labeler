@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S195"
+  ],
+  "reason": "发言明确包含两层求助：反复拖延无法按时做事对应S194拖延；迟迟无法开始动手对应S195启动困难；无其他领域线索。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:47:17.982047+00:00",
+  "conflict_mark": false,
+  "utterance": "总是拖延、迟迟无法开始动手做该做的事，怎么克服拖延症、提升执行力？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

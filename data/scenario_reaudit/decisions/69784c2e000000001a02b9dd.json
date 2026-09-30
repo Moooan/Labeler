@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S177"
+  ],
+  "reason": "发言核心诉求是发笔记没人看，属于自媒体曝光与流量增长困扰；厂二代仅为身份背景，未展开其他具体求助事项，故仅匹配流量增长场景。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:44:06.966170+00:00",
+  "conflict_mark": false,
+  "utterance": "江浙沪厂二代现状，感觉发笔记求助根本没人看。",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

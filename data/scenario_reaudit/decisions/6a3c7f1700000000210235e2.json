@@ -1,0 +1,17 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S098",
+    "S104",
+    "S205"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:07:37.394378+00:00",
+  "conflict_mark": false,
+  "utterance": "我是只会做题的博士生，该怎么自救？\n\n只会做题的博士生对未来职业方向感到迷茫，该怎么做好长期职业规划？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

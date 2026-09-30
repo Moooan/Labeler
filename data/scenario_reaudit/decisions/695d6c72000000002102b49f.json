@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S195"
+  ],
+  "reason": "用户实际求助是做完计划后反复拖延、无法启动执行，对应拖延与启动困难；ISTJ仅为自我描述，未涉及具体学业或职场任务，不足以挂其他域标签。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:23:34.727152+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

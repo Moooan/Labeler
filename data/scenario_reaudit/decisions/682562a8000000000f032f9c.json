@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "用户是资助方，实际求助目标是如何寻找可长期资助的困难学生，属于公益捐赠事项；S190/S193均面向学生申请奖助与资助办理，用户并非求助资助的受助方，故整体域外判drop。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:10:07.108184+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

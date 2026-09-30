@@ -1,0 +1,19 @@
+{
+  "context": "",
+  "changes": [
+    "删除话题标签#献血 #求助（献血这一关键信息已在标题中保留，#求助为平台求助标签）"
+  ],
+  "needs_review": false,
+  "note_id": "6a12a2a60000000036030bea",
+  "source_sig": "267ec25132e43c7713f4dcf7163e21e7a650f1aff96a90e5458d9558bb7cf826",
+  "version": "ai-context-v1",
+  "approved": true,
+  "revision": 4,
+  "updated_at": "2026-09-29T07:47:04.339313+00:00",
+  "context_backup": "献血后怎么会这样？",
+  "context_not_needed": true,
+  "not_needed": false,
+  "query": "献血后怎么会这样？",
+  "query_not_needed": false,
+  "query_approved": true
+}

@@ -1,0 +1,17 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S100",
+    "S101",
+    "S104"
+  ],
+  "reason": "用户以年薪300万为约束条件，询问值得选择的行业赛道（S100）与岗位（S101），并求职业方向的整体规划路径（S104）；发言未涉及基于性格兴趣的自我探索，不选S234。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:20:21.103892+00:00",
+  "conflict_mark": false,
+  "utterance": "想达到年薪300万，有哪些行业和岗位的赛道值得选，该怎么规划职业方向？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

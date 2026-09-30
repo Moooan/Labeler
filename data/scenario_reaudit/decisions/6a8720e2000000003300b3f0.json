@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S195"
+  ],
+  "reason": "发言明确求助克服重度拖延及想法多却无法开始行动，分别对应拖延（S194）与启动困难（S195）；未提及任务拆解、自律坚持等其他执行困扰，无充分依据选取更多标签。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:46:27.369492+00:00",
+  "conflict_mark": false,
+  "utterance": "重度拖延，想法很多却迟迟无法行动，该怎么克服拖延、让自己开始行动？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

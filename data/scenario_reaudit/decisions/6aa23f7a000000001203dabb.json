@@ -1,0 +1,17 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068",
+    "S069",
+    "S070"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:08:35.901703+00:00",
+  "conflict_mark": false,
+  "utterance": "我迟钝的才发现，挂科了，但是我补考没时间去，家里有事，只能重修了，重修有影响吗\n\n挂科后补考没时间去只能重修，重修会有什么影响？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

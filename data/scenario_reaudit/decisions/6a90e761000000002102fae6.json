@@ -1,0 +1,19 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S059",
+    "S065",
+    "S094",
+    "S098",
+    "S199"
+  ],
+  "reason": "发言主体是大学阶段整体规划（S098），并明确提及稳住绩点（S065）、理性选课（S059）、选择社团（S094）和避免手机沉迷（S199），各子目标均有文本依据。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:12:00.161870+00:00",
+  "conflict_mark": false,
+  "utterance": "大一新生该如何规划大学生活，才能稳住绩点、理性选课选社团，避免沉迷手机、不虚度光阴？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

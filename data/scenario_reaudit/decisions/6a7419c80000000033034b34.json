@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S098"
+  ],
+  "reason": "发言为法学研究生新生询问入学前应做哪些准备，属于研究生阶段入学前的整体规划咨询；未涉及具体课程、材料或就业等细分维度，故仅匹配S098。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:11:12.349261+00:00",
+  "conflict_mark": false,
+  "utterance": "法学专业研究生新生，入学前需要做哪些准备？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

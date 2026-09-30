@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S197"
+  ],
+  "reason": "发言核心是反复拖延及尝试多种方法后两周即打回原形，对应拖延与自律坚持场景；愧疚自责仅是伴随描述，非独立求助目标，其余标签无文本依据",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:37:42.178902+00:00",
+  "conflict_mark": false,
+  "utterance": "拖延后总愧疚自责，手账本、定闹钟、报付费班都试过却两周打回原形，拖延症该怎么真正戒掉？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

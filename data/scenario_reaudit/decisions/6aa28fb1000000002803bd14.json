@@ -1,0 +1,19 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S066",
+    "S095",
+    "S098",
+    "S112",
+    "S123"
+  ],
+  "reason": "用户核心诉求是大学四年整体规划（S098），并明确分问综测准备（S066含综合测评）、学生组织（S095）、实习（S123）和秋招（S112）的准备，各子项均有直接文本依据",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:07:35.031178+00:00",
+  "conflict_mark": false,
+  "utterance": "大学四年该如何规划？综测、学生组织、实习和秋招分别要怎么准备？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

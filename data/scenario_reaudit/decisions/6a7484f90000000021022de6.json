@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S058"
+  ],
+  "reason": "实际求助目标是花钱找人代做行测模考和计算机作业（代考/代写），并非本人备考行测或完成作业的学习求助；行测、作业仅为偶然词语，不属于标签体系内的合规场景，判为域外drop。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:36:08.763340+00:00",
+  "conflict_mark": false,
+  "utterance": "需要你帮我做计算机专业方向 的作业，很急！",
+  "utterance_modified": true,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

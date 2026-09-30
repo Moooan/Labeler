@@ -1,0 +1,18 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S026",
+    "S184",
+    "S186",
+    "S204"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:34:15.465255+00:00",
+  "conflict_mark": false,
+  "utterance": "备考上外考研复试很焦虑，寝室床连着、厕所还有味道没法放松，在学校里还有什么解压方式？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

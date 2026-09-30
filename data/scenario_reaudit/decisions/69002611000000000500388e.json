@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S098"
+  ],
+  "reason": "发言明确为大一新生求大学四年的个人学习规划，与S098在校阶段整体规划直接对应；未涉及选课、绩点、升学路径等更具体场景，不额外添加标签。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:29:05.278751+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

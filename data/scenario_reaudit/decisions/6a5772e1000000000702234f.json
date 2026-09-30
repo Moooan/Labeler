@@ -1,0 +1,18 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S017",
+    "S032",
+    "S068",
+    "S099"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:28:06.736373+00:00",
+  "conflict_mark": false,
+  "utterance": "985本校绩点排名不行的法本能找到好工作吗？大学第一次挂科怎么办，记不记入档案，对后续考公考研找工作有什么影响吗？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

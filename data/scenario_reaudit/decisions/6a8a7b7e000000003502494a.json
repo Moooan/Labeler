@@ -1,0 +1,11 @@
+{
+  "status": "scenario_insufficient",
+  "scenarios": [],
+  "reason": "核心求助是是否转发陌生人提供的未经核实的网暴素材及自担风险的取舍，属于标签体系外的人际纠纷/第三方求助处理问题，与升学、就业、自媒体运营、个人成长等既有场景定义均不匹配，无可充分依据的标签。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:27:19.857644+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

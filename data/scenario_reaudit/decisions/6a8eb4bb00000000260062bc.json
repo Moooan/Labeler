@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S096"
+  ],
+  "reason": "实际求助目标是职业规划大赛两赛道评审标准差异及参赛材料如何针对性准备，属于校园竞赛备赛需求；体系内无职业规划大赛专属标签，S232仅限创业类赛事，故归入定义含备赛的S096。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:27:19.984164+00:00",
+  "conflict_mark": false,
+  "utterance": "参加职业规划大赛，成长赛道和就业赛道的评审标准有什么区别，该怎么针对性准备材料？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

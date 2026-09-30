@@ -1,0 +1,17 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S104",
+    "S234",
+    "S205"
+  ],
+  "reason": "参考 改写台 · zlx 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:32:59.394416+00:00",
+  "conflict_mark": false,
+  "utterance": "人生方向迷茫，如何用《人生设计课》的奥德赛计划结合AI，梳理出未来5年的职业和生活规划？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

@@ -1,0 +1,22 @@
+{
+  "context": "",
+  "changes": [
+    "标题“技术大佬帮忙写一个codex的skill”改为对AI的表达“请你帮我写一个codex的skill”，并与正文合并",
+    "删除“会搭建的可以留言或者私信”平台交互措辞",
+    "删除话题标签#codex #skill（codex、skill信息已在正文和标题中体现）",
+    "保留“有偿”付费需求"
+  ],
+  "needs_review": false,
+  "note_id": "6a474c6f000000000f01444d",
+  "source_sig": "8c3cd4084b1a859bff6f38600c64df5be7566f3a300ff67b4a0af44403030cfc",
+  "version": "ai-context-v1",
+  "approved": true,
+  "revision": 4,
+  "updated_at": "2026-09-29T07:40:01.095160+00:00",
+  "query": "请你帮我写一个codex的skill。主要是信息流素材的批量制作，从文案脚本，到素材的收集，再到文案配音，最后剪辑合成，每天自动批量生成高质量的视频素材，只要能按照我的要求搭建完成，生成完整的skill即可，输出有质量的视频素材。",
+  "query_not_needed": false,
+  "query_approved": true,
+  "context_backup": "请你帮我写一个codex的skill，有偿。主要是信息流素材的批量制作，从文案脚本，到素材的收集，再到文案配音，最后剪辑合成，每天自动批量生成高质量的视频素材，只要能按照我的要求搭建完成，生成完整的skill即可，输出有质量的视频素材。",
+  "context_not_needed": true,
+  "not_needed": false
+}

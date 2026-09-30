@@ -1,0 +1,16 @@
+{
+  "context": "这是一个情感求助贴，请你帮忙分析，出出主意。",
+  "changes": [
+    "将面向群众的求助对象'各位军师'改为对AI的'你'：求各位军师帮忙分析→请你帮忙分析",
+    "删除#情感问题 #关于感情 #矛盾 等无实际信息的平台话题标签",
+    "标题'情感求助'与正文合并，正文本身已表达求助含义"
+  ],
+  "needs_review": false,
+  "note_id": "6a468ef5000000000f014334",
+  "source_sig": "4be121d383b20f11165ded7d8ec4e901c417959c77ede78b5ba367ee2af88d07",
+  "version": "ai-context-v1",
+  "approved": false,
+  "revision": 3,
+  "updated_at": "2026-09-29T08:00:54.127949+00:00",
+  "not_needed": true
+}

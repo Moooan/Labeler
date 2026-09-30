@@ -1,0 +1,19 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S057",
+    "S059",
+    "S068",
+    "S072",
+    "S204"
+  ],
+  "reason": "海外挂科信息可以稍作拓展",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:03:09.506902+00:00",
+  "conflict_mark": false,
+  "utterance": "第一次挂科还有救吗？\n第一次经历真的好慌\n主要最近状态很差，考试的时候脑子也是一团糟真的凉凉的，就差那么几分\n不知道怎么办才好啊，在澳洲申请撤课的成功率怎么样啊…是不是还要meeting，自己diy材料可以吗，已经两眼一抹黑了……\n\n在澳洲留学第一次挂科只差几分，申请撤课的成功率有多大、需要参加meeting吗、材料可以自己DIY吗？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

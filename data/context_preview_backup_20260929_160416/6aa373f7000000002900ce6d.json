@@ -1,0 +1,15 @@
+{
+  "context": "真的很着急，有急事需要替班几天！！有偿的，请你帮忙。",
+  "changes": [
+    "删除平台标签#求助贴、#在线求助，保留#真的很着急所表达的着急情绪",
+    "标题“有偿求助”并入正文：保留“有偿”这一付费需求，“求助”对象从网友改为对AI说“请你帮忙”"
+  ],
+  "needs_review": false,
+  "note_id": "6aa373f7000000002900ce6d",
+  "source_sig": "6ffbf98f8cf9d5394d1e1dd72242d42b2f510018e0dfb96660df2846cc2dc9d3",
+  "version": "ai-context-v1",
+  "approved": false,
+  "revision": 2,
+  "updated_at": "2026-09-29T05:52:53.797850+00:00",
+  "not_needed": true
+}

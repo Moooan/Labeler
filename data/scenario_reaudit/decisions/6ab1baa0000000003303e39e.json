@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言实际求助是宠物鸟疾病用药和本地鸟医推荐，属宠物健康域外内容，给定标签体系中无可匹配场景。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:26:20.990030+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

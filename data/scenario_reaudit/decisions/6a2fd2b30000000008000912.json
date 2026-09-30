@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S110"
+  ],
+  "reason": "实际求助目标是应对面试提问的回答策略，属于个体面试准备范畴，命中S110；发言未提供具体行业、岗位或招聘类型，且并非真正制定长期职业规划，故不选S104等其他标签。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:11:53.912435+00:00",
+  "conflict_mark": false,
+  "utterance": "面试被问“未来3-5年的职业规划是什么”，该怎么回答？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

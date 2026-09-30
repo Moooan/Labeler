@@ -1,0 +1,18 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S104",
+    "S234",
+    "S204",
+    "S205"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:04:33.968251+00:00",
+  "conflict_mark": false,
+  "query": "即将踏入社会的应届生，从小缺乏引导，面对人生规划很迷茫焦虑，我该怎么规划未来的方向？",
+  "query_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

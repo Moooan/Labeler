@@ -1,0 +1,11 @@
+{
+  "status": "scenario_insufficient",
+  "scenarios": [],
+  "reason": "用户实际求助目标是判断是否购买升学规划师服务及如何挑选靠谱机构，属于服务选购决策，标签体系中无对应场景；发言未涉及选科、备考、志愿填报等具体实质规划问题，故判为域外drop。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:20:40.457326+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

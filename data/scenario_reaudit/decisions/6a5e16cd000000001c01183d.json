@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S234"
+  ],
+  "reason": "核心诉求是在没有明确候选方向时探索人生路径，属于生涯方向探索（S234）；提到的迷茫焦虑是背景描述而非主要求助目标，未涉及具体升学、求职或情绪疏导操作。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:36:08.013387+00:00",
+  "conflict_mark": false,
+  "utterance": "没有靠山的女生，对人生规划感到迷茫焦虑，该怎么找到自己的方向？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

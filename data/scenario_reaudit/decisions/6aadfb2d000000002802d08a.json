@@ -1,0 +1,13 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "发言为庆祝论文发表的纯陈述，未提出具体可识别的求助目标；'帮帮别人助助自己'含义模糊，无充分文本依据归入任何场景",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:44:24.111858+00:00",
+  "conflict_mark": false,
+  "utterance": "庆祝一下自己的的第一篇论文发表。我是贫困大学生，帮帮别人助助自己。",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

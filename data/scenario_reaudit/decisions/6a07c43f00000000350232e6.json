@@ -1,0 +1,13 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S205"
+  ],
+  "reason": "发言明确表达迷茫情绪与缺乏方向感，符合S205；未指明具体领域（学业/职业/关系等），不足以归类职业方向探索或倦怠、就医等场景",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:25:20.275732+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

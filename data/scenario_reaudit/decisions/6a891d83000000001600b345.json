@@ -1,0 +1,19 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S065",
+    "S096",
+    "S098",
+    "S104",
+    "S112"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:29:42.783421+00:00",
+  "conflict_mark": false,
+  "utterance": "大学四年每个年级该怎么规划？大一到大四分别在绩点、竞赛、证书、实习和秋招上要做哪些准备？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

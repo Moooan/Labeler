@@ -1,0 +1,13 @@
+{
+  "status": "scenario_insufficient",
+  "scenarios": [],
+  "reason": "发言为家长围绕孩子初中入学、校内情况和初中三年学习规划的交流诉求，属于义务教育/中小学家长场景，给定标签体系（高考、考研、大学在校、就业等）无对应场景，判为域外drop。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:06:42.881086+00:00",
+  "conflict_mark": false,
+  "query": "孩子2027年入读南京树人力人初中，校内情况怎么样、初中三年该怎么帮孩子做学习规划？",
+  "query_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

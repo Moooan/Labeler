@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S200"
+  ],
+  "reason": "发言明确想要可用于系统梳理人生的规划与复盘方法，属于计划制定与复盘调整的方法求助，对应S200；未涉及具体升学、就业或方向比较，不足以归入其他场景。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:32:42.405800+00:00",
+  "conflict_mark": false,
+  "utterance": "想系统地梳理自己的人生，有哪些实用的规划和复盘方法可以照着做？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

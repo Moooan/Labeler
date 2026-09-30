@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194",
+    "S195"
+  ],
+  "reason": "发言明确提到学习总是拖延（S194）以及迟迟无法开始、难以进入状态（S195），两个场景均有直接文本依据；未提及分心、坚持或具体学业阶段，不再外推。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:36:18.369764+00:00",
+  "conflict_mark": false,
+  "utterance": "学习总是拖延、迟迟无法开始，有什么方法能让自己快速进入学习状态？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

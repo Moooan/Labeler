@@ -1,0 +1,11 @@
+{
+  "status": "drop",
+  "scenarios": [],
+  "reason": "核心求助是判断身体出现的异常痕迹是否为疾病并询问怎么办，属身体健康类困扰；发言未涉及学业、求职等语境，标签体系中最贴近的是S229身体健康。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T04:23:22.522166+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "insufficient",
+  "scenarios": [
+    "S100",
+    "S104",
+    "S128"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:29:58.606184+00:00",
+  "conflict_mark": false,
+  "utterance": "我是双非本科的四大人，职业选择很迷茫，请你帮我做职业规划，帮我看看offer怎么选。不一定要精准做到，人生方向很多。\n\n双非本科在四大做审计，对未来职业方向迷茫，长期规划和offer、行业选择该怎么定？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

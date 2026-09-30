@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068",
+    "S208"
+  ],
+  "reason": "用户因挂科欠下较多学分求助补回学分的学业问题，同时明确提到精神状态差、希望调整心态走出挫败，符合挂科影响与失败受挫恢复两个场景；重修/补考等具体路径未明确提及，故不选。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:02:31.450707+00:00",
+  "conflict_mark": false,
+  "utterance": "挂科欠了很多学分，精神状态很差，该怎么调整心态走出来、把学分修回来？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

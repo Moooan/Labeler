@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S104",
+    "S110"
+  ],
+  "reason": "参考 改写台 · zlx 结论",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:12:12.971792+00:00",
+  "conflict_mark": false,
+  "utterance": "面试时被问到职业规划，该怎么回答？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

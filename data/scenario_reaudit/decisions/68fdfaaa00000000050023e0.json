@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S194"
+  ],
+  "reason": "发言核心求助是克服长期拖延且愈发失控，直接对应S194拖延；INTP仅为自我标签，无其他阶段或领域信息，不足以匹配其他标签。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:30:13.654336+00:00",
+  "conflict_mark": false,
+  "utterance": "INTP重度拖延症，因为从没玩脱过一直改不掉，反而越来越肆无忌惮，该怎么克服？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

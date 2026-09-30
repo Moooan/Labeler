@@ -176,6 +176,22 @@ def parse_ai(raw, allowed):
     return {"status": value["status"], "scenarios": ids, "reason": value["reason"]}
 
 
+def parse_final(status, scenarios, reason, allowed):
+    """Validate a human decision, including the manual-only taxonomy-gap state."""
+    if status != "scenario_insufficient":
+        return parse_ai(json.dumps({"status": status, "scenarios": scenarios,
+                                    "reason": reason}, ensure_ascii=False), allowed)
+    if not isinstance(scenarios, list) or any(
+            not isinstance(sid, str) or sid not in allowed for sid in scenarios):
+        raise ValueError("无效场景ID")
+    ids = list(dict.fromkeys(scenarios))
+    if len(ids) > 5:
+        raise ValueError("场景数量不符合要求")
+    if not isinstance(reason, str) or not reason.strip():
+        raise ValueError("缺少审核依据")
+    return {"status": status, "scenarios": ids, "reason": reason.strip()}
+
+
 def title_from_query(query, utterance=""):
     """Last-resort display title: first ~18 non-whitespace characters of current text."""
     text = re.sub(r"\s+", " ", str(query or utterance or "")).strip()
@@ -354,7 +370,8 @@ class Reaudit:
             final = {"status": ai["status"], "scenarios": list(ai["scenarios"]),
                          "reason": "自动确认：context保留，且两位人工结论与AI独立复审完全一致。",
                          "operator": "系统自动确认", "revision": 1, "updated_at": now(),
-                         "conflict_mark": False, "left": left, "right": right, "automatic": True}
+                         "conflict_mark": False, "utterance": row.get("utterance", ""),
+                         "utterance_modified": False, "left": left, "right": right, "automatic": True}
             atomic_json(self.directory / "decisions" / f"{nid}.json", final)
             return True
 
@@ -380,10 +397,15 @@ class Reaudit:
         if not operator:
             return jsonify(error="请填写复审人姓名"), 400
         try:
-            final = parse_ai(json.dumps({"status": data.get("status"), "scenarios": data.get("scenarios"),
-                                            "reason": str(data.get("reason") or "人工确认")}), self.allowed)
+            final = parse_final(data.get("status"), data.get("scenarios"),
+                                str(data.get("reason") or "人工确认"), self.allowed)
         except ValueError:
-            return jsonify(error="请选择有效分诊与最多5个场景；保留至少需要一个场景"), 400
+            return jsonify(error="请选择有效意见与最多5个场景；保留至少需要一个场景"), 400
+        source_utterance = str(self.rows[nid].get("utterance", "")).strip()
+        final_utterance = str(data.get("utterance") if data.get("utterance") is not None
+                              else source_utterance).strip()
+        if not final_utterance:
+            return jsonify(error="拼接后的用户发言不能为空"), 400
         with self.lock:
             old = self.decision(nid)
             revision = (old or {}).get("revision", 0)
@@ -391,6 +413,8 @@ class Reaudit:
                 return jsonify(error="另一位复审人已修改，请刷新后再核对"), 409
             final.update(operator=operator, revision=revision + 1, updated_at=now(),
                          conflict_mark=bool(data.get("conflict_mark")),
+                         utterance=final_utterance,
+                         utterance_modified=final_utterance != source_utterance,
                          left=str(data.get("left") or ""), right=str(data.get("right") or ""))
             if old:
                 history = self.directory / "history" / f"{nid}.jsonl"

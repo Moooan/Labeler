@@ -1,0 +1,15 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S153"
+  ],
+  "reason": "发言核心是在职员工遭遇单位降薪超过一半、年中绩效收入大幅缩水并询问应对办法，与S153薪酬/降薪场景直接对应；文本未提及合同争议、离职或跳槽意向，不足以归入劳动权益或去留类场景。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:57:35.968209+00:00",
+  "conflict_mark": false,
+  "utterance": "单位最近两三个月降薪超过一半，以前年中绩效能有两三万，遇到这种情况我该怎么办？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S198",
+    "S218"
+  ],
+  "reason": "发言自述疑似ADHD、注意力调控能力受损，核心诉求为改善注意力并发挥优势，直接对应ADHD相关困扰场景；注意力频繁转移与改善诉求亦对应分心场景，无足够依据支持其他标签。",
+  "operator": "zlx",
+  "revision": 1,
+  "updated_at": "2026-09-30T03:32:09.186995+00:00",
+  "conflict_mark": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

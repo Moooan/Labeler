@@ -1,0 +1,18 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S065",
+    "S096",
+    "S098",
+    "S112"
+  ],
+  "reason": "参考 改写台 · 万芸希 结论",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T05:29:58.193635+00:00",
+  "conflict_mark": false,
+  "utterance": "大学四年整体该怎么规划？绩点、四六级、竞赛证书、实习和秋招各阶段要如何安排？",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}

@@ -1,0 +1,19 @@
+{
+  "context": "北大夏令营推荐信骑缝签字，请你帮忙。北大夏令营校系统模版有写要求推荐人密封在封口骑缝处签字，但是有的项目申请阶段不需要邮寄只需要扫描pdf上传。是不是只要招生简章公告里没有明确写要求推荐信要在骑缝处签字的就不用这么弄了呢",
+  "changes": [
+    "标题中的'求助'改为对AI的表达'请你帮忙'，并与正文合并",
+    "删除表情代码[泪崩R]",
+    "保留有意义的话题词#北京大学 #保研 #推荐信 #骑缝签"
+  ],
+  "needs_review": false,
+  "note_id": "6a1d0fea0000000006031545",
+  "source_sig": "d4654cd21e299499cee88b85c3c9c3ed8adcbd47b606642e7ea0f6b7338b697b",
+  "version": "ai-context-v1",
+  "approved": true,
+  "revision": 4,
+  "updated_at": "2026-09-29T08:00:29.243132+00:00",
+  "query_backup": "北大夏令营推荐信只需扫描PDF上传时，如果招生简章没明确要求，还需要推荐人在封口骑缝处签字吗？",
+  "query": "",
+  "query_not_needed": true,
+  "query_approved": false
+}

@@ -1,0 +1,16 @@
+{
+  "status": "keep",
+  "scenarios": [
+    "S068",
+    "S069"
+  ],
+  "reason": "发言核心是补考通过后的成绩认定与影响，属于补考成绩和影响范畴，S069最贴切；无需推测其他背景。",
+  "operator": "WH",
+  "revision": 1,
+  "updated_at": "2026-09-30T06:23:16.098384+00:00",
+  "conflict_mark": false,
+  "utterance": "请你帮帮我，不懂就问，补考过了算挂科吗",
+  "utterance_modified": false,
+  "left": "改写台 · 万芸希",
+  "right": "改写台 · zlx"
+}
